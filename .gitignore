@@ -1,0 +1,97 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Environment Variables & Secrets
+.env
+.env.*
+!.env.example
+*.env
+
+# Audio & Media Files
+*.wav
+*.mp3
+*.ogg
+*.flac
+*.m4a
+*.aac
+*.wma
+*.webm
+*.mp4
+
+# Large Dataset Archives & ZIP files
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+rajvaani_5_dialects_sample_dataset.zip
+
+# Audio Data & Dataset Processing Directories
+input_audio/
+output_dataset/
+data/
+datasets/
+raw_audio/
+processed/
+temp/
+tmp/
+
+# Logs and databases
+*.log
+logs/
+*.sqlite3
+*.db
+
+# IDE & Editor specific files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+
+# OS Generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+[Dd]esktop.ini
+
+# Agent / AI local configs
+.agents/
+.gemini/

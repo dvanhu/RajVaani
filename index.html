@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RajVaani - Rajasthani ASR Dataset Review Tool</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #0b0f19;
+            --bg-secondary: #131b2e;
+            --bg-card: rgba(26, 36, 61, 0.7);
+            --bg-card-hover: rgba(36, 49, 82, 0.9);
+            --accent-saffron: #ff8c38;
+            --accent-saffron-glow: rgba(255, 140, 56, 0.35);
+            --accent-gold: #ffc837;
+            --accent-emerald: #10b981;
+            --accent-rose: #f43f5e;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --text-muted: #64748b;
+            --border-color: rgba(255, 255, 255, 0.08);
+            --border-highlight: rgba(255, 140, 56, 0.3);
+            --glass-blur: blur(16px);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            min-height: 100vh;
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(255, 140, 56, 0.08) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(255, 200, 55, 0.06) 0%, transparent 40%);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .devanagari {
+            font-family: 'Noto Sans Devanagari', 'Outfit', sans-serif;
+        }
+
+        header {
+            background: rgba(11, 15, 25, 0.85);
+            backdrop-filter: var(--glass-blur);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .brand-icon {
+            width: 42px;
+            height: 42px;
+            background: linear-gradient(135deg, var(--accent-saffron), var(--accent-gold));
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.25rem;
+            color: #0b0f19;
+            box-shadow: 0 4px 16px var(--accent-saffron-glow);
+        }
+
+        .brand-text h1 {
+            font-size: 1.35rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            background: linear-gradient(to right, #ffffff, #cbd5e1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .brand-text p {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+
+        .header-actions {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .dialect-select, .filter-select, .search-input {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            color: var(--text-primary);
+            padding: 0.55rem 1rem;
+            border-radius: 10px;
+            font-family: inherit;
+            font-size: 0.9rem;
+            outline: none;
+            transition: all 0.2s ease;
+        }
+
+        .dialect-select:focus, .filter-select:focus, .search-input:focus {
+            border-color: var(--accent-saffron);
+            box-shadow: 0 0 0 2px var(--accent-saffron-glow);
+        }
+
+        .stats-bar {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1rem;
+            padding: 1.5rem 2rem 0.5rem;
+            max-width: 1400px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .stat-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            backdrop-filter: var(--glass-blur);
+            border-radius: 14px;
+            padding: 1rem 1.25rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+        }
+
+        .stat-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+
+        .stat-value {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .stat-value.highlight {
+            color: var(--accent-gold);
+        }
+
+        .stat-value.success {
+            color: var(--accent-emerald);
+        }
+
+        main {
+            flex: 1;
+            max-width: 1400px;
+            margin: 0 auto;
+            width: 100%;
+            padding: 1rem 2rem 3rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .controls-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 0.5rem;
+        }
+
+        .segment-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 0.85rem;
+            margin-top: 0.5rem;
+        }
+
+        .segment-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            backdrop-filter: var(--glass-blur);
+            border-radius: 14px;
+            padding: 1.1rem 1.4rem;
+            display: grid;
+            grid-template-columns: 140px 1fr 280px;
+            gap: 1.5rem;
+            align-items: center;
+            transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .segment-card:hover {
+            background: var(--bg-card-hover);
+            border-color: var(--border-highlight);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+        }
+
+        .segment-meta {
+            display: flex;
+            flex-direction: column;
+            gap: 0.35rem;
+        }
+
+        .segment-id {
+            font-weight: 700;
+            font-size: 0.95rem;
+            color: var(--accent-gold);
+        }
+
+        .badge-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.3rem;
+        }
+
+        .badge {
+            font-size: 0.7rem;
+            padding: 0.15rem 0.45rem;
+            border-radius: 6px;
+            font-weight: 600;
+        }
+
+        .badge-speaker {
+            background: rgba(59, 130, 246, 0.2);
+            color: #60a5fa;
+            border: 1px solid rgba(59, 130, 246, 0.3);
+        }
+
+        .badge-duration {
+            background: rgba(148, 163, 184, 0.15);
+            color: #cbd5e1;
+        }
+
+        .badge-noise {
+            background: rgba(244, 63, 94, 0.2);
+            color: #fb7185;
+            border: 1px solid rgba(244, 63, 94, 0.3);
+        }
+
+        .badge-confidence {
+            background: rgba(16, 185, 129, 0.15);
+            color: #34d399;
+        }
+
+        .segment-transcript {
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+        }
+
+        .transcript-text {
+            font-size: 1.15rem;
+            line-height: 1.6;
+            color: var(--text-primary);
+        }
+
+        .source-file {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+
+        .segment-player {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            align-items: flex-end;
+        }
+
+        audio {
+            width: 100%;
+            height: 36px;
+            border-radius: 20px;
+            outline: none;
+        }
+
+        audio::-webkit-media-controls-panel {
+            background-color: #1e293b;
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 4rem 2rem;
+            color: var(--text-muted);
+            background: var(--bg-card);
+            border-radius: 16px;
+            border: 1px dashed var(--border-color);
+        }
+
+        @media (max-width: 900px) {
+            .segment-card {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            .segment-player {
+                align-items: stretch;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="brand">
+            <div class="brand-icon">RV</div>
+            <div class="brand-text">
+                <h1>RajVaani Dataset Reviewer</h1>
+                <p>Rajasthani Dialects Verbatim ASR Quality Review</p>
+            </div>
+        </div>
+        <div class="header-actions">
+            <select id="dialectSelect" class="dialect-select">
+                <option value="mewati">Mewati (मेवाती)</option>
+                <option value="mewari" selected>Mewari (मेवाड़ी)</option>
+                <option value="marwari">Marwari (मारवाड़ी)</option>
+                <option value="bagri">Bagri (बागड़ी)</option>
+                <option value="hadothi">Hadothi (हाड़ौती)</option>
+                <option value="dhundhari">Dhundhari (ढूँढाड़ी)</option>
+            </select>
+            <select id="filterSelect" class="filter-select">
+                <option value="all">All Segments</option>
+                <option value="speech">Speech Only</option>
+                <option value="noise">Noise / Music Only</option>
+            </select>
+            <input type="text" id="searchInput" class="search-input" placeholder="Search transcript...">
+        </div>
+    </header>
+
+    <section class="stats-bar">
+        <div class="stat-card">
+            <span class="stat-label">Total Segments</span>
+            <span id="statTotal" class="stat-value highlight">0</span>
+        </div>
+        <div class="stat-card">
+            <span class="stat-label">Speech Chunks</span>
+            <span id="statSpeech" class="stat-value">0</span>
+        </div>
+        <div class="stat-card">
+            <span class="stat-label">Mean Confidence</span>
+            <span id="statConfidence" class="stat-value success">0%</span>
+        </div>
+        <div class="stat-card">
+            <span class="stat-label">Total Audio Time</span>
+            <span id="statDuration" class="stat-value">0 min</span>
+        </div>
+    </section>
+
+    <main>
+        <div class="controls-row">
+            <span id="resultCount" style="color: var(--text-secondary); font-size: 0.9rem;">Loading segments...</span>
+        </div>
+        <div id="segmentContainer" class="segment-grid"></div>
+    </main>
+
+    <script>
+        let currentSegments = [];
+        const dialectSelect = document.getElementById('dialectSelect');
+        const filterSelect = document.getElementById('filterSelect');
+        const searchInput = document.getElementById('searchInput');
+        const segmentContainer = document.getElementById('segmentContainer');
+        const statTotal = document.getElementById('statTotal');
+        const statSpeech = document.getElementById('statSpeech');
+        const statConfidence = document.getElementById('statConfidence');
+        const statDuration = document.getElementById('statDuration');
+        const resultCount = document.getElementById('resultCount');
+
+        async function loadDialect(dialect) {
+            segmentContainer.innerHTML = '<div class="empty-state">Loading dataset for ' + dialect + '...</div>';
+            try {
+                const response = await fetch(`output_dataset/${dialect}/${dialect}_metadata.jsonl`);
+                if (!response.ok) {
+                    throw new Error(`Dataset not generated yet for ${dialect}`);
+                }
+                const text = await response.text();
+                const lines = text.trim().split('\n').filter(l => l.trim().length > 0);
+                currentSegments = lines.map(line => JSON.parse(line));
+                renderSegments();
+            } catch (err) {
+                currentSegments = [];
+                segmentContainer.innerHTML = `
+                    <div class="empty-state">
+                        <h3>No dataset found for "${dialect}"</h3>
+                        <p style="margin-top: 0.5rem;">To generate, run: <code>python process_dataset.py --dialects ${dialect}</code></p>
+                    </div>
+                `;
+                updateStats([]);
+            }
+        }
+
+        function updateStats(segments) {
+            const speech = segments.filter(s => !s.is_noise_or_music);
+            statTotal.textContent = segments.length;
+            statSpeech.textContent = speech.length;
+            
+            if (speech.length > 0) {
+                const totalDur = speech.reduce((sum, s) => sum + (s.duration_seconds || 0), 0);
+                const avgConf = speech.reduce((sum, s) => sum + (s.confidence_score || 1.0), 0) / speech.length;
+                statConfidence.textContent = (avgConf * 100).toFixed(1) + '%';
+                statDuration.textContent = (totalDur / 60).toFixed(1) + ' min';
+            } else {
+                statConfidence.textContent = '0%';
+                statDuration.textContent = '0 min';
+            }
+        }
+
+        function renderSegments() {
+            const dialect = dialectSelect.value;
+            const filter = filterSelect.value;
+            const query = searchInput.value.toLowerCase().trim();
+
+            let filtered = currentSegments.filter(s => {
+                if (filter === 'speech' && s.is_noise_or_music) return false;
+                if (filter === 'noise' && !s.is_noise_or_music) return false;
+                if (query && !s.verbatim_devanagari.toLowerCase().includes(query)) return false;
+                return true;
+            });
+
+            updateStats(currentSegments);
+            resultCount.textContent = `Showing ${filtered.length} of ${currentSegments.length} segments`;
+
+            if (filtered.length === 0) {
+                segmentContainer.innerHTML = '<div class="empty-state">No segments matching current filters.</div>';
+                return;
+            }
+
+            segmentContainer.innerHTML = filtered.map(s => {
+                const audioSrc = `output_dataset/${dialect}/${s.audio_file}`;
+                const confPercent = s.confidence_score ? Math.round(s.confidence_score * 100) : 100;
+                return `
+                    <div class="segment-card">
+                        <div class="segment-meta">
+                            <span class="segment-id">${s.segment_id}</span>
+                            <div class="badge-group">
+                                <span class="badge badge-speaker">${s.speaker_id || 'speaker_01'}</span>
+                                <span class="badge badge-duration">${s.duration_seconds.toFixed(1)}s</span>
+                                ${s.is_noise_or_music ? '<span class="badge badge-noise">Noise/Music</span>' : `<span class="badge badge-confidence">${confPercent}% Conf</span>`}
+                            </div>
+                        </div>
+                        <div class="segment-transcript">
+                            <div class="transcript-text devanagari">${s.verbatim_devanagari || '<em>[Non-speech audio]</em>'}</div>
+                            <div class="source-file">${s.source_file} (${s.start_time_seconds.toFixed(1)}s - ${s.end_time_seconds.toFixed(1)}s)</div>
+                        </div>
+                        <div class="segment-player">
+                            <audio controls preload="none" src="${audioSrc}"></audio>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        dialectSelect.addEventListener('change', () => loadDialect(dialectSelect.value));
+        filterSelect.addEventListener('change', renderSegments);
+        searchInput.addEventListener('input', renderSegments);
+
+        // Initial load
+        loadDialect('mewari');
+    </script>
+</body>
+</html>
