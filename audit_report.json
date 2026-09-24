@@ -1,0 +1,6812 @@
+{
+  "mewari": {
+    "metadata_entries": 109,
+    "audio_files": 109,
+    "noise_entries": 0,
+    "speech_entries": 109,
+    "passed": 109,
+    "failed": 0,
+    "passed_duration_sec": 600.2,
+    "decoding_failures": [],
+    "silent_or_truncated": [],
+    "duration_mismatch": [],
+    "timestamp_exceeds_source": [],
+    "invalid_timestamp_interval": [],
+    "text_mismatches": [],
+    "digits_found": [],
+    "long_clips_gt_30s": [],
+    "short_clips_lt_3s": [
+      {
+        "seg_id": "segment_0126",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_0127",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_0130",
+        "dur": 1.0
+      },
+      {
+        "seg_id": "segment_0163",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_0164",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_0167",
+        "dur": 2.3
+      },
+      {
+        "seg_id": "segment_0168",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_0172",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_0175",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_0176",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_0181",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_0185",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_0195",
+        "dur": 2.3
+      },
+      {
+        "seg_id": "segment_0200",
+        "dur": 2.3
+      },
+      {
+        "seg_id": "segment_0202",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_0205",
+        "dur": 1.5
+      },
+      {
+        "seg_id": "segment_0208",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_0215",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_0216",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_0221",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_0223",
+        "dur": 1.5
+      },
+      {
+        "seg_id": "segment_0227",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_0232",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_0236",
+        "dur": 2.5
+      }
+    ],
+    "missing_audio": [],
+    "missing_text": [],
+    "issues": []
+  },
+  "marwari": {
+    "metadata_entries": 1802,
+    "audio_files": 1802,
+    "noise_entries": 0,
+    "speech_entries": 1802,
+    "passed": 1802,
+    "failed": 0,
+    "passed_duration_sec": 12153.819,
+    "decoding_failures": [],
+    "silent_or_truncated": [],
+    "duration_mismatch": [],
+    "timestamp_exceeds_source": [],
+    "invalid_timestamp_interval": [],
+    "text_mismatches": [],
+    "digits_found": [],
+    "long_clips_gt_30s": [],
+    "short_clips_lt_3s": [
+      {
+        "seg_id": "segment_0131",
+        "dur": 2.46
+      },
+      {
+        "seg_id": "segment_0135",
+        "dur": 2.48
+      },
+      {
+        "seg_id": "segment_0136",
+        "dur": 2.32
+      },
+      {
+        "seg_id": "segment_0140",
+        "dur": 2.2
+      },
+      {
+        "seg_id": "segment_0145",
+        "dur": 2.38
+      },
+      {
+        "seg_id": "segment_0146",
+        "dur": 2.52
+      },
+      {
+        "seg_id": "segment_0151",
+        "dur": 2.72
+      },
+      {
+        "seg_id": "segment_0155",
+        "dur": 2.48
+      },
+      {
+        "seg_id": "segment_0165",
+        "dur": 2.88
+      },
+      {
+        "seg_id": "segment_0189",
+        "dur": 2.84
+      },
+      {
+        "seg_id": "segment_0192",
+        "dur": 2.96
+      },
+      {
+        "seg_id": "segment_0193",
+        "dur": 2.12
+      },
+      {
+        "seg_id": "segment_0208",
+        "dur": 1.78
+      },
+      {
+        "seg_id": "segment_0291",
+        "dur": 2.63
+      },
+      {
+        "seg_id": "segment_0293",
+        "dur": 2.74
+      },
+      {
+        "seg_id": "segment_0294",
+        "dur": 1.8
+      },
+      {
+        "seg_id": "segment_0307",
+        "dur": 2.94
+      },
+      {
+        "seg_id": "segment_0311",
+        "dur": 1.87
+      },
+      {
+        "seg_id": "segment_0314",
+        "dur": 1.92
+      },
+      {
+        "seg_id": "segment_0317",
+        "dur": 1.91
+      },
+      {
+        "seg_id": "segment_0319",
+        "dur": 2.27
+      },
+      {
+        "seg_id": "segment_0320",
+        "dur": 1.99
+      },
+      {
+        "seg_id": "segment_0327",
+        "dur": 1.97
+      },
+      {
+        "seg_id": "segment_0329",
+        "dur": 2.85
+      },
+      {
+        "seg_id": "segment_0527",
+        "dur": 1.7
+      },
+      {
+        "seg_id": "segment_0531",
+        "dur": 2.7
+      },
+      {
+        "seg_id": "segment_0533",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_0535",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_0548",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_0555",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_0560",
+        "dur": 2.1
+      },
+      {
+        "seg_id": "segment_0569",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_0587",
+        "dur": 2.1
+      },
+      {
+        "seg_id": "segment_0608",
+        "dur": 2.12
+      },
+      {
+        "seg_id": "segment_0609",
+        "dur": 2.03
+      },
+      {
+        "seg_id": "segment_0620",
+        "dur": 2.1
+      },
+      {
+        "seg_id": "segment_0653",
+        "dur": 1.5
+      },
+      {
+        "seg_id": "segment_0670",
+        "dur": 2.62
+      },
+      {
+        "seg_id": "segment_0676",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_0688",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_0702",
+        "dur": 1.5
+      },
+      {
+        "seg_id": "segment_0711",
+        "dur": 1.76
+      },
+      {
+        "seg_id": "segment_0714",
+        "dur": 2.28
+      },
+      {
+        "seg_id": "segment_0718",
+        "dur": 2.56
+      },
+      {
+        "seg_id": "segment_0723",
+        "dur": 2.3
+      },
+      {
+        "seg_id": "segment_0724",
+        "dur": 2.68
+      },
+      {
+        "seg_id": "segment_0729",
+        "dur": 2.38
+      },
+      {
+        "seg_id": "segment_0733",
+        "dur": 2.64
+      },
+      {
+        "seg_id": "segment_0734",
+        "dur": 2.1
+      },
+      {
+        "seg_id": "segment_0740",
+        "dur": 1.5
+      },
+      {
+        "seg_id": "segment_0752",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_0753",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_0756",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_0783",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_0800",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_0811",
+        "dur": 1.5
+      },
+      {
+        "seg_id": "segment_0817",
+        "dur": 2.7
+      },
+      {
+        "seg_id": "segment_0821",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_0825",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_0827",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_0828",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_0830",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_0831",
+        "dur": 2.8
+      },
+      {
+        "seg_id": "segment_0833",
+        "dur": 2.4
+      },
+      {
+        "seg_id": "segment_0834",
+        "dur": 2.3
+      },
+      {
+        "seg_id": "segment_0835",
+        "dur": 2.2
+      },
+      {
+        "seg_id": "segment_0840",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_0848",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_0859",
+        "dur": 1.76
+      },
+      {
+        "seg_id": "segment_0870",
+        "dur": 2.1
+      },
+      {
+        "seg_id": "segment_0871",
+        "dur": 1.1
+      },
+      {
+        "seg_id": "segment_0873",
+        "dur": 1.5
+      },
+      {
+        "seg_id": "segment_0877",
+        "dur": 2.1
+      },
+      {
+        "seg_id": "segment_0882",
+        "dur": 2.9
+      },
+      {
+        "seg_id": "segment_0885",
+        "dur": 2.1
+      },
+      {
+        "seg_id": "segment_0886",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_0891",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_0893",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_0898",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_0905",
+        "dur": 2.1
+      },
+      {
+        "seg_id": "segment_0920",
+        "dur": 2.22
+      },
+      {
+        "seg_id": "segment_0928",
+        "dur": 2.14
+      },
+      {
+        "seg_id": "segment_0951",
+        "dur": 1.76
+      },
+      {
+        "seg_id": "segment_0953",
+        "dur": 2.54
+      },
+      {
+        "seg_id": "segment_0963",
+        "dur": 2.62
+      },
+      {
+        "seg_id": "segment_0966",
+        "dur": 2.78
+      },
+      {
+        "seg_id": "segment_0967",
+        "dur": 1.62
+      },
+      {
+        "seg_id": "segment_0986",
+        "dur": 1.5
+      },
+      {
+        "seg_id": "segment_0996",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_0997",
+        "dur": 1.5
+      },
+      {
+        "seg_id": "segment_1006",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_1014",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_1015",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_1018",
+        "dur": 1.8
+      },
+      {
+        "seg_id": "segment_1019",
+        "dur": 1.8
+      },
+      {
+        "seg_id": "segment_1020",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_1021",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_1032",
+        "dur": 2.1
+      },
+      {
+        "seg_id": "segment_1041",
+        "dur": 1.4
+      },
+      {
+        "seg_id": "segment_1046",
+        "dur": 1.8
+      },
+      {
+        "seg_id": "segment_1052",
+        "dur": 1.95
+      },
+      {
+        "seg_id": "segment_1059",
+        "dur": 2.85
+      },
+      {
+        "seg_id": "segment_1063",
+        "dur": 2.8
+      },
+      {
+        "seg_id": "segment_1065",
+        "dur": 1.92
+      },
+      {
+        "seg_id": "segment_1070",
+        "dur": 2.11
+      },
+      {
+        "seg_id": "segment_1072",
+        "dur": 2.87
+      },
+      {
+        "seg_id": "segment_1073",
+        "dur": 2.63
+      },
+      {
+        "seg_id": "segment_1074",
+        "dur": 2.52
+      },
+      {
+        "seg_id": "segment_1078",
+        "dur": 2.49
+      },
+      {
+        "seg_id": "segment_1079",
+        "dur": 2.43
+      },
+      {
+        "seg_id": "segment_1080",
+        "dur": 2.3
+      },
+      {
+        "seg_id": "segment_1095",
+        "dur": 2.42
+      },
+      {
+        "seg_id": "segment_1096",
+        "dur": 2.89
+      },
+      {
+        "seg_id": "segment_1098",
+        "dur": 2.53
+      },
+      {
+        "seg_id": "segment_1100",
+        "dur": 2.21
+      },
+      {
+        "seg_id": "segment_1105",
+        "dur": 2.2
+      },
+      {
+        "seg_id": "segment_1108",
+        "dur": 2.9
+      },
+      {
+        "seg_id": "segment_1110",
+        "dur": 2.41
+      },
+      {
+        "seg_id": "segment_1112",
+        "dur": 2.51
+      },
+      {
+        "seg_id": "segment_1113",
+        "dur": 2.56
+      },
+      {
+        "seg_id": "segment_1114",
+        "dur": 2.28
+      },
+      {
+        "seg_id": "segment_1118",
+        "dur": 2.92
+      },
+      {
+        "seg_id": "segment_1122",
+        "dur": 2.78
+      },
+      {
+        "seg_id": "segment_1123",
+        "dur": 2.92
+      },
+      {
+        "seg_id": "segment_1128",
+        "dur": 2.4
+      },
+      {
+        "seg_id": "segment_1134",
+        "dur": 2.92
+      },
+      {
+        "seg_id": "segment_1138",
+        "dur": 2.96
+      },
+      {
+        "seg_id": "segment_1139",
+        "dur": 2.74
+      },
+      {
+        "seg_id": "segment_1164",
+        "dur": 1.76
+      },
+      {
+        "seg_id": "segment_1171",
+        "dur": 2.68
+      },
+      {
+        "seg_id": "segment_1177",
+        "dur": 1.74
+      },
+      {
+        "seg_id": "segment_1178",
+        "dur": 1.9
+      },
+      {
+        "seg_id": "segment_1183",
+        "dur": 2.42
+      },
+      {
+        "seg_id": "segment_1206",
+        "dur": 2.78
+      },
+      {
+        "seg_id": "segment_1210",
+        "dur": 2.76
+      },
+      {
+        "seg_id": "segment_1237",
+        "dur": 2.1
+      },
+      {
+        "seg_id": "segment_1238",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_1241",
+        "dur": 2.8
+      },
+      {
+        "seg_id": "segment_1246",
+        "dur": 2.9
+      },
+      {
+        "seg_id": "segment_1284",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_1290",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_1291",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_1294",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_1301",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_1335",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_1413",
+        "dur": 2.2
+      },
+      {
+        "seg_id": "segment_1425",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_1426",
+        "dur": 2.9
+      },
+      {
+        "seg_id": "segment_1436",
+        "dur": 2.6
+      },
+      {
+        "seg_id": "segment_1437",
+        "dur": 2.8
+      },
+      {
+        "seg_id": "segment_1512",
+        "dur": 1.74
+      },
+      {
+        "seg_id": "segment_1588",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_1615",
+        "dur": 2.3
+      },
+      {
+        "seg_id": "segment_1618",
+        "dur": 2.4
+      },
+      {
+        "seg_id": "segment_1635",
+        "dur": 2.7
+      },
+      {
+        "seg_id": "segment_1636",
+        "dur": 2.7
+      },
+      {
+        "seg_id": "segment_1818",
+        "dur": 2.9
+      },
+      {
+        "seg_id": "segment_2005",
+        "dur": 1.64
+      },
+      {
+        "seg_id": "segment_2009",
+        "dur": 2.11
+      }
+    ],
+    "missing_audio": [],
+    "missing_text": [],
+    "issues": []
+  },
+  "dhundhari": {
+    "metadata_entries": 1171,
+    "audio_files": 1171,
+    "noise_entries": 0,
+    "speech_entries": 1171,
+    "passed": 1171,
+    "failed": 0,
+    "passed_duration_sec": 6164.836200000008,
+    "decoding_failures": [],
+    "silent_or_truncated": [],
+    "duration_mismatch": [],
+    "timestamp_exceeds_source": [],
+    "invalid_timestamp_interval": [],
+    "text_mismatches": [],
+    "digits_found": [],
+    "long_clips_gt_30s": [],
+    "short_clips_lt_3s": [
+      {
+        "seg_id": "segment_1214",
+        "dur": 2.2
+      },
+      {
+        "seg_id": "segment_1215",
+        "dur": 2.3
+      },
+      {
+        "seg_id": "segment_1221",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_1222",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_1224",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_1226",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_1228",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_1244",
+        "dur": 2.2
+      },
+      {
+        "seg_id": "segment_1245",
+        "dur": 2.3
+      },
+      {
+        "seg_id": "segment_1253",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_1254",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_1267",
+        "dur": 1.76
+      },
+      {
+        "seg_id": "segment_1268",
+        "dur": 2.4
+      },
+      {
+        "seg_id": "segment_1286",
+        "dur": 2.24
+      },
+      {
+        "seg_id": "segment_1288",
+        "dur": 1.74
+      },
+      {
+        "seg_id": "segment_1299",
+        "dur": 2.19
+      },
+      {
+        "seg_id": "segment_1315",
+        "dur": 2.1
+      },
+      {
+        "seg_id": "segment_1333",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_1343",
+        "dur": 1.4
+      },
+      {
+        "seg_id": "segment_1344",
+        "dur": 1.49
+      },
+      {
+        "seg_id": "segment_1348",
+        "dur": 2.24
+      },
+      {
+        "seg_id": "segment_1354",
+        "dur": 1.52
+      },
+      {
+        "seg_id": "segment_1355",
+        "dur": 1.44
+      },
+      {
+        "seg_id": "segment_1356",
+        "dur": 1.54
+      },
+      {
+        "seg_id": "segment_1357",
+        "dur": 2.42
+      },
+      {
+        "seg_id": "segment_1358",
+        "dur": 1.32
+      },
+      {
+        "seg_id": "segment_1359",
+        "dur": 2.34
+      },
+      {
+        "seg_id": "segment_1360",
+        "dur": 1.5
+      },
+      {
+        "seg_id": "segment_1361",
+        "dur": 2.3
+      },
+      {
+        "seg_id": "segment_1362",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_1369",
+        "dur": 2.8
+      },
+      {
+        "seg_id": "segment_1374",
+        "dur": 2.22
+      },
+      {
+        "seg_id": "segment_1392",
+        "dur": 2.4
+      },
+      {
+        "seg_id": "segment_1395",
+        "dur": 1.75
+      },
+      {
+        "seg_id": "segment_1396",
+        "dur": 2.42
+      },
+      {
+        "seg_id": "segment_1415",
+        "dur": 1.74
+      },
+      {
+        "seg_id": "segment_1420",
+        "dur": 2.1
+      },
+      {
+        "seg_id": "segment_1426",
+        "dur": 2.52
+      },
+      {
+        "seg_id": "segment_1430",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_1440",
+        "dur": 2.25
+      },
+      {
+        "seg_id": "segment_1452",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_1465",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_1467",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_1479",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_1481",
+        "dur": 1.5
+      },
+      {
+        "seg_id": "segment_1491",
+        "dur": 2.7
+      },
+      {
+        "seg_id": "segment_1493",
+        "dur": 2.6
+      },
+      {
+        "seg_id": "segment_1498",
+        "dur": 2.15
+      },
+      {
+        "seg_id": "segment_1499",
+        "dur": 2.57
+      },
+      {
+        "seg_id": "segment_1507",
+        "dur": 2.91
+      },
+      {
+        "seg_id": "segment_1516",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_1529",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_1546",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_1550",
+        "dur": 1.76
+      },
+      {
+        "seg_id": "segment_1563",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_1575",
+        "dur": 2.2
+      },
+      {
+        "seg_id": "segment_1592",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_1604",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_1609",
+        "dur": 2.09
+      },
+      {
+        "seg_id": "segment_1613",
+        "dur": 2.41
+      },
+      {
+        "seg_id": "segment_1614",
+        "dur": 2.96
+      },
+      {
+        "seg_id": "segment_1618",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_1627",
+        "dur": 2.2
+      },
+      {
+        "seg_id": "segment_1628",
+        "dur": 2.9
+      },
+      {
+        "seg_id": "segment_1639",
+        "dur": 2.2
+      },
+      {
+        "seg_id": "segment_1644",
+        "dur": 2.2
+      },
+      {
+        "seg_id": "segment_1645",
+        "dur": 2.9
+      },
+      {
+        "seg_id": "segment_1647",
+        "dur": 2.9
+      },
+      {
+        "seg_id": "segment_1655",
+        "dur": 2.4
+      },
+      {
+        "seg_id": "segment_1656",
+        "dur": 2.2
+      },
+      {
+        "seg_id": "segment_1675",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_1687",
+        "dur": 2.13
+      },
+      {
+        "seg_id": "segment_1704",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_1713",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_1722",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_1742",
+        "dur": 1.9
+      },
+      {
+        "seg_id": "segment_1755",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_1756",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_1771",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_1786",
+        "dur": 1.74
+      },
+      {
+        "seg_id": "segment_1790",
+        "dur": 2.52
+      },
+      {
+        "seg_id": "segment_1797",
+        "dur": 2.86
+      },
+      {
+        "seg_id": "segment_1799",
+        "dur": 2.22
+      },
+      {
+        "seg_id": "segment_1800",
+        "dur": 2.66
+      },
+      {
+        "seg_id": "segment_1801",
+        "dur": 2.3
+      },
+      {
+        "seg_id": "segment_1811",
+        "dur": 2.66
+      },
+      {
+        "seg_id": "segment_1813",
+        "dur": 2.46
+      },
+      {
+        "seg_id": "segment_1814",
+        "dur": 2.32
+      },
+      {
+        "seg_id": "segment_1815",
+        "dur": 1.94
+      },
+      {
+        "seg_id": "segment_1816",
+        "dur": 2.36
+      },
+      {
+        "seg_id": "segment_1817",
+        "dur": 1.92
+      },
+      {
+        "seg_id": "segment_1818",
+        "dur": 2.44
+      },
+      {
+        "seg_id": "segment_1829",
+        "dur": 2.82
+      },
+      {
+        "seg_id": "segment_1834",
+        "dur": 1.96
+      },
+      {
+        "seg_id": "segment_1841",
+        "dur": 2.2
+      },
+      {
+        "seg_id": "segment_1851",
+        "dur": 2.86
+      },
+      {
+        "seg_id": "segment_1852",
+        "dur": 2.74
+      },
+      {
+        "seg_id": "segment_1853",
+        "dur": 2.84
+      },
+      {
+        "seg_id": "segment_1858",
+        "dur": 2.64
+      },
+      {
+        "seg_id": "segment_1863",
+        "dur": 2.88
+      },
+      {
+        "seg_id": "segment_1864",
+        "dur": 2.98
+      },
+      {
+        "seg_id": "segment_1867",
+        "dur": 2.6
+      },
+      {
+        "seg_id": "segment_1868",
+        "dur": 2.54
+      },
+      {
+        "seg_id": "segment_1869",
+        "dur": 2.46
+      },
+      {
+        "seg_id": "segment_1881",
+        "dur": 2.2
+      },
+      {
+        "seg_id": "segment_1887",
+        "dur": 2.42
+      },
+      {
+        "seg_id": "segment_1892",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_1898",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_1900",
+        "dur": 2.8
+      },
+      {
+        "seg_id": "segment_1912",
+        "dur": 1.8
+      },
+      {
+        "seg_id": "segment_1916",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_1917",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_1918",
+        "dur": 1.5
+      },
+      {
+        "seg_id": "segment_1919",
+        "dur": 2.8
+      },
+      {
+        "seg_id": "segment_1926",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_1931",
+        "dur": 2.8
+      },
+      {
+        "seg_id": "segment_1932",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_1938",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_1939",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_1943",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_1947",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_1974",
+        "dur": 1.5
+      },
+      {
+        "seg_id": "segment_1996",
+        "dur": 1.9
+      },
+      {
+        "seg_id": "segment_2001",
+        "dur": 2.9
+      },
+      {
+        "seg_id": "segment_2033",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_2045",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_2050",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_2060",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_2069",
+        "dur": 1.62
+      },
+      {
+        "seg_id": "segment_2081",
+        "dur": 1.94
+      },
+      {
+        "seg_id": "segment_2083",
+        "dur": 2.82
+      },
+      {
+        "seg_id": "segment_2101",
+        "dur": 2.46
+      },
+      {
+        "seg_id": "segment_2119",
+        "dur": 2.58
+      },
+      {
+        "seg_id": "segment_2122",
+        "dur": 2.56
+      },
+      {
+        "seg_id": "segment_2143",
+        "dur": 1.76
+      },
+      {
+        "seg_id": "segment_2187",
+        "dur": 1.7
+      },
+      {
+        "seg_id": "segment_2212",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_2213",
+        "dur": 2.7
+      },
+      {
+        "seg_id": "segment_2238",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_2243",
+        "dur": 2.8
+      },
+      {
+        "seg_id": "segment_2261",
+        "dur": 1.5
+      },
+      {
+        "seg_id": "segment_2298",
+        "dur": 1.5
+      },
+      {
+        "seg_id": "segment_2306",
+        "dur": 1.76
+      },
+      {
+        "seg_id": "segment_2318",
+        "dur": 2.95
+      },
+      {
+        "seg_id": "segment_2319",
+        "dur": 2.11
+      },
+      {
+        "seg_id": "segment_2327",
+        "dur": 2.05
+      },
+      {
+        "seg_id": "segment_2333",
+        "dur": 2.02
+      },
+      {
+        "seg_id": "segment_2342",
+        "dur": 2.57
+      },
+      {
+        "seg_id": "segment_2349",
+        "dur": 2.93
+      },
+      {
+        "seg_id": "segment_2355",
+        "dur": 0.93
+      },
+      {
+        "seg_id": "segment_2359",
+        "dur": 1.91
+      },
+      {
+        "seg_id": "segment_2370",
+        "dur": 2.19
+      },
+      {
+        "seg_id": "segment_2371",
+        "dur": 2.93
+      },
+      {
+        "seg_id": "segment_2381",
+        "dur": 2.85
+      },
+      {
+        "seg_id": "segment_2384",
+        "dur": 2.94
+      }
+    ],
+    "missing_audio": [],
+    "missing_text": [],
+    "issues": []
+  },
+  "mewati": {
+    "metadata_entries": 2148,
+    "audio_files": 2148,
+    "noise_entries": 0,
+    "speech_entries": 2148,
+    "passed": 2148,
+    "failed": 0,
+    "passed_duration_sec": 12910.91149999999,
+    "decoding_failures": [],
+    "silent_or_truncated": [],
+    "duration_mismatch": [],
+    "timestamp_exceeds_source": [],
+    "invalid_timestamp_interval": [],
+    "text_mismatches": [],
+    "digits_found": [],
+    "long_clips_gt_30s": [],
+    "short_clips_lt_3s": [
+      {
+        "seg_id": "segment_0007",
+        "dur": 2.53
+      },
+      {
+        "seg_id": "segment_0008",
+        "dur": 2.53
+      },
+      {
+        "seg_id": "segment_0014",
+        "dur": 2.53
+      },
+      {
+        "seg_id": "segment_0024",
+        "dur": 2.85
+      },
+      {
+        "seg_id": "segment_0037",
+        "dur": 2.85
+      },
+      {
+        "seg_id": "segment_0049",
+        "dur": 2.98
+      },
+      {
+        "seg_id": "segment_0055",
+        "dur": 1.5
+      },
+      {
+        "seg_id": "segment_0056",
+        "dur": 1.2
+      },
+      {
+        "seg_id": "segment_0058",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_0062",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_0066",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_0129",
+        "dur": 2.8
+      },
+      {
+        "seg_id": "segment_0134",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_0136",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_0139",
+        "dur": 2.62
+      },
+      {
+        "seg_id": "segment_0141",
+        "dur": 2.86
+      },
+      {
+        "seg_id": "segment_0142",
+        "dur": 2.52
+      },
+      {
+        "seg_id": "segment_0145",
+        "dur": 2.78
+      },
+      {
+        "seg_id": "segment_0146",
+        "dur": 2.8
+      },
+      {
+        "seg_id": "segment_0152",
+        "dur": 2.8
+      },
+      {
+        "seg_id": "segment_0155",
+        "dur": 2.9
+      },
+      {
+        "seg_id": "segment_0157",
+        "dur": 2.7
+      },
+      {
+        "seg_id": "segment_0166",
+        "dur": 2.7
+      },
+      {
+        "seg_id": "segment_0178",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_0180",
+        "dur": 2.3
+      },
+      {
+        "seg_id": "segment_0186",
+        "dur": 2.65
+      },
+      {
+        "seg_id": "segment_0187",
+        "dur": 2.8
+      },
+      {
+        "seg_id": "segment_0198",
+        "dur": 2.58
+      },
+      {
+        "seg_id": "segment_0213",
+        "dur": 2.14
+      },
+      {
+        "seg_id": "segment_0220",
+        "dur": 2.72
+      },
+      {
+        "seg_id": "segment_0243",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_0257",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_0264",
+        "dur": 2.3
+      },
+      {
+        "seg_id": "segment_0265",
+        "dur": 2.73
+      },
+      {
+        "seg_id": "segment_0267",
+        "dur": 1.8
+      },
+      {
+        "seg_id": "segment_0277",
+        "dur": 1.25
+      },
+      {
+        "seg_id": "segment_0278",
+        "dur": 0.97
+      },
+      {
+        "seg_id": "segment_0284",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_0286",
+        "dur": 2.8
+      },
+      {
+        "seg_id": "segment_0287",
+        "dur": 2.3
+      },
+      {
+        "seg_id": "segment_0320",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_0328",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_0343",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_0348",
+        "dur": 1.5
+      },
+      {
+        "seg_id": "segment_0352",
+        "dur": 2.1
+      },
+      {
+        "seg_id": "segment_0353",
+        "dur": 2.9
+      },
+      {
+        "seg_id": "segment_0355",
+        "dur": 1.5
+      },
+      {
+        "seg_id": "segment_0389",
+        "dur": 1.5
+      },
+      {
+        "seg_id": "segment_0394",
+        "dur": 2.9
+      },
+      {
+        "seg_id": "segment_0398",
+        "dur": 1.5
+      },
+      {
+        "seg_id": "segment_0405",
+        "dur": 2.1
+      },
+      {
+        "seg_id": "segment_0417",
+        "dur": 2.2
+      },
+      {
+        "seg_id": "segment_0422",
+        "dur": 1.5
+      },
+      {
+        "seg_id": "segment_0442",
+        "dur": 2.1
+      },
+      {
+        "seg_id": "segment_0444",
+        "dur": 2.9
+      },
+      {
+        "seg_id": "segment_0479",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_0488",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_0491",
+        "dur": 2.9
+      },
+      {
+        "seg_id": "segment_0506",
+        "dur": 1.5
+      },
+      {
+        "seg_id": "segment_0525",
+        "dur": 1.76
+      },
+      {
+        "seg_id": "segment_0531",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_0537",
+        "dur": 2.8
+      },
+      {
+        "seg_id": "segment_0541",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_0550",
+        "dur": 2.84
+      },
+      {
+        "seg_id": "segment_0557",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_0567",
+        "dur": 2.1
+      },
+      {
+        "seg_id": "segment_0573",
+        "dur": 2.14
+      },
+      {
+        "seg_id": "segment_0580",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_0582",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_0587",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_0602",
+        "dur": 1.75
+      },
+      {
+        "seg_id": "segment_0609",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_0617",
+        "dur": 1.7
+      },
+      {
+        "seg_id": "segment_0640",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_0650",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_0659",
+        "dur": 1.5
+      },
+      {
+        "seg_id": "segment_0660",
+        "dur": 2.3
+      },
+      {
+        "seg_id": "segment_0670",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_0673",
+        "dur": 1.64
+      },
+      {
+        "seg_id": "segment_0680",
+        "dur": 2.55
+      },
+      {
+        "seg_id": "segment_0687",
+        "dur": 2.23
+      },
+      {
+        "seg_id": "segment_0689",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_0700",
+        "dur": 2.15
+      },
+      {
+        "seg_id": "segment_0701",
+        "dur": 2.85
+      },
+      {
+        "seg_id": "segment_0732",
+        "dur": 1.41
+      },
+      {
+        "seg_id": "segment_0753",
+        "dur": 0.98
+      },
+      {
+        "seg_id": "segment_0800",
+        "dur": 1.45
+      },
+      {
+        "seg_id": "segment_0831",
+        "dur": 1.5
+      },
+      {
+        "seg_id": "segment_0844",
+        "dur": 2.11
+      },
+      {
+        "seg_id": "segment_0845",
+        "dur": 2.79
+      },
+      {
+        "seg_id": "segment_0855",
+        "dur": 1.9
+      },
+      {
+        "seg_id": "segment_0856",
+        "dur": 2.7
+      },
+      {
+        "seg_id": "segment_0878",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_0879",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_0896",
+        "dur": 2.4
+      },
+      {
+        "seg_id": "segment_0897",
+        "dur": 1.7
+      },
+      {
+        "seg_id": "segment_0916",
+        "dur": 1.45
+      },
+      {
+        "seg_id": "segment_0917",
+        "dur": 2.54
+      },
+      {
+        "seg_id": "segment_0918",
+        "dur": 2.95
+      },
+      {
+        "seg_id": "segment_0946",
+        "dur": 2.1
+      },
+      {
+        "seg_id": "segment_0947",
+        "dur": 2.4
+      },
+      {
+        "seg_id": "segment_0957",
+        "dur": 2.2
+      },
+      {
+        "seg_id": "segment_0971",
+        "dur": 2.1
+      },
+      {
+        "seg_id": "segment_0978",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_1019",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_1020",
+        "dur": 2.6
+      },
+      {
+        "seg_id": "segment_1028",
+        "dur": 1.25
+      },
+      {
+        "seg_id": "segment_1029",
+        "dur": 2.92
+      },
+      {
+        "seg_id": "segment_1067",
+        "dur": 2.45
+      },
+      {
+        "seg_id": "segment_1068",
+        "dur": 2.95
+      },
+      {
+        "seg_id": "segment_1103",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_1148",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_1163",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_1164",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_1170",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_1181",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_1182",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_1196",
+        "dur": 2.1
+      },
+      {
+        "seg_id": "segment_1199",
+        "dur": 2.8
+      },
+      {
+        "seg_id": "segment_1314",
+        "dur": 2.21
+      },
+      {
+        "seg_id": "segment_1337",
+        "dur": 1.5
+      },
+      {
+        "seg_id": "segment_1352",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_1361",
+        "dur": 1.76
+      },
+      {
+        "seg_id": "segment_1369",
+        "dur": 2.92
+      },
+      {
+        "seg_id": "segment_1398",
+        "dur": 1.5
+      },
+      {
+        "seg_id": "segment_1433",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_1441",
+        "dur": 2.1
+      },
+      {
+        "seg_id": "segment_1453",
+        "dur": 1.7
+      },
+      {
+        "seg_id": "segment_1454",
+        "dur": 2.3
+      },
+      {
+        "seg_id": "segment_1455",
+        "dur": 2.9
+      },
+      {
+        "seg_id": "segment_1461",
+        "dur": 2.7
+      },
+      {
+        "seg_id": "segment_1469",
+        "dur": 2.4
+      },
+      {
+        "seg_id": "segment_1470",
+        "dur": 1.2
+      },
+      {
+        "seg_id": "segment_1472",
+        "dur": 0.7
+      },
+      {
+        "seg_id": "segment_1473",
+        "dur": 1.8
+      },
+      {
+        "seg_id": "segment_1474",
+        "dur": 1.5
+      },
+      {
+        "seg_id": "segment_1475",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_1476",
+        "dur": 1.2
+      },
+      {
+        "seg_id": "segment_1478",
+        "dur": 1.5
+      },
+      {
+        "seg_id": "segment_1480",
+        "dur": 1.2
+      },
+      {
+        "seg_id": "segment_1496",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_1549",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_1563",
+        "dur": 2.22
+      },
+      {
+        "seg_id": "segment_1567",
+        "dur": 2.64
+      },
+      {
+        "seg_id": "segment_1588",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_1624",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_1625",
+        "dur": 2.8
+      },
+      {
+        "seg_id": "segment_1647",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_1659",
+        "dur": 1.0
+      },
+      {
+        "seg_id": "segment_1667",
+        "dur": 1.95
+      },
+      {
+        "seg_id": "segment_1668",
+        "dur": 2.63
+      },
+      {
+        "seg_id": "segment_1674",
+        "dur": 2.2
+      },
+      {
+        "seg_id": "segment_1675",
+        "dur": 2.94
+      },
+      {
+        "seg_id": "segment_1697",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_1718",
+        "dur": 2.15
+      },
+      {
+        "seg_id": "segment_1738",
+        "dur": 1.84
+      },
+      {
+        "seg_id": "segment_1744",
+        "dur": 2.12
+      },
+      {
+        "seg_id": "segment_1747",
+        "dur": 2.92
+      },
+      {
+        "seg_id": "segment_1748",
+        "dur": 1.88
+      },
+      {
+        "seg_id": "segment_1749",
+        "dur": 2.68
+      },
+      {
+        "seg_id": "segment_1753",
+        "dur": 2.74
+      },
+      {
+        "seg_id": "segment_1754",
+        "dur": 2.82
+      },
+      {
+        "seg_id": "segment_1756",
+        "dur": 2.3
+      },
+      {
+        "seg_id": "segment_1760",
+        "dur": 1.88
+      },
+      {
+        "seg_id": "segment_1762",
+        "dur": 2.42
+      },
+      {
+        "seg_id": "segment_1775",
+        "dur": 2.98
+      },
+      {
+        "seg_id": "segment_1777",
+        "dur": 2.98
+      },
+      {
+        "seg_id": "segment_1781",
+        "dur": 2.96
+      },
+      {
+        "seg_id": "segment_1790",
+        "dur": 1.24
+      },
+      {
+        "seg_id": "segment_1792",
+        "dur": 1.4
+      },
+      {
+        "seg_id": "segment_1793",
+        "dur": 2.06
+      },
+      {
+        "seg_id": "segment_1803",
+        "dur": 2.04
+      },
+      {
+        "seg_id": "segment_1806",
+        "dur": 1.66
+      },
+      {
+        "seg_id": "segment_1842",
+        "dur": 1.5
+      },
+      {
+        "seg_id": "segment_1845",
+        "dur": 1.6
+      },
+      {
+        "seg_id": "segment_1847",
+        "dur": 2.7
+      },
+      {
+        "seg_id": "segment_1851",
+        "dur": 2.7
+      },
+      {
+        "seg_id": "segment_1853",
+        "dur": 2.6
+      },
+      {
+        "seg_id": "segment_1854",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_1855",
+        "dur": 2.6
+      },
+      {
+        "seg_id": "segment_1870",
+        "dur": 2.4
+      },
+      {
+        "seg_id": "segment_1872",
+        "dur": 2.8
+      },
+      {
+        "seg_id": "segment_1880",
+        "dur": 2.4
+      },
+      {
+        "seg_id": "segment_1886",
+        "dur": 2.3
+      },
+      {
+        "seg_id": "segment_1887",
+        "dur": 2.9
+      },
+      {
+        "seg_id": "segment_1892",
+        "dur": 1.8
+      },
+      {
+        "seg_id": "segment_1902",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_1937",
+        "dur": 1.12
+      },
+      {
+        "seg_id": "segment_1938",
+        "dur": 1.48
+      },
+      {
+        "seg_id": "segment_1939",
+        "dur": 1.83
+      },
+      {
+        "seg_id": "segment_1942",
+        "dur": 1.97
+      },
+      {
+        "seg_id": "segment_1947",
+        "dur": 1.63
+      },
+      {
+        "seg_id": "segment_1950",
+        "dur": 2.33
+      },
+      {
+        "seg_id": "segment_1951",
+        "dur": 2.38
+      },
+      {
+        "seg_id": "segment_1952",
+        "dur": 0.82
+      },
+      {
+        "seg_id": "segment_1958",
+        "dur": 2.64
+      },
+      {
+        "seg_id": "segment_1966",
+        "dur": 2.07
+      },
+      {
+        "seg_id": "segment_1967",
+        "dur": 2.03
+      },
+      {
+        "seg_id": "segment_1971",
+        "dur": 1.12
+      },
+      {
+        "seg_id": "segment_1975",
+        "dur": 2.46
+      },
+      {
+        "seg_id": "segment_1978",
+        "dur": 2.17
+      },
+      {
+        "seg_id": "segment_1979",
+        "dur": 2.13
+      },
+      {
+        "seg_id": "segment_1986",
+        "dur": 1.35
+      },
+      {
+        "seg_id": "segment_1989",
+        "dur": 2.01
+      },
+      {
+        "seg_id": "segment_1990",
+        "dur": 2.69
+      },
+      {
+        "seg_id": "segment_1992",
+        "dur": 2.31
+      },
+      {
+        "seg_id": "segment_1993",
+        "dur": 2.58
+      },
+      {
+        "seg_id": "segment_1998",
+        "dur": 1.25
+      },
+      {
+        "seg_id": "segment_1999",
+        "dur": 1.65
+      },
+      {
+        "seg_id": "segment_2000",
+        "dur": 1.98
+      },
+      {
+        "seg_id": "segment_2003",
+        "dur": 2.37
+      },
+      {
+        "seg_id": "segment_2005",
+        "dur": 1.83
+      },
+      {
+        "seg_id": "segment_2008",
+        "dur": 1.73
+      },
+      {
+        "seg_id": "segment_2010",
+        "dur": 1.53
+      },
+      {
+        "seg_id": "segment_2012",
+        "dur": 1.65
+      },
+      {
+        "seg_id": "segment_2013",
+        "dur": 2.83
+      },
+      {
+        "seg_id": "segment_2019",
+        "dur": 2.8
+      },
+      {
+        "seg_id": "segment_2025",
+        "dur": 1.13
+      },
+      {
+        "seg_id": "segment_2028",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_2029",
+        "dur": 1.74
+      },
+      {
+        "seg_id": "segment_2030",
+        "dur": 2.7
+      },
+      {
+        "seg_id": "segment_2031",
+        "dur": 1.74
+      },
+      {
+        "seg_id": "segment_2032",
+        "dur": 2.68
+      },
+      {
+        "seg_id": "segment_2034",
+        "dur": 2.88
+      },
+      {
+        "seg_id": "segment_2036",
+        "dur": 2.78
+      },
+      {
+        "seg_id": "segment_2041",
+        "dur": 2.68
+      },
+      {
+        "seg_id": "segment_2042",
+        "dur": 2.28
+      },
+      {
+        "seg_id": "segment_2047",
+        "dur": 2.86
+      },
+      {
+        "seg_id": "segment_2051",
+        "dur": 2.7
+      },
+      {
+        "seg_id": "segment_2055",
+        "dur": 2.44
+      },
+      {
+        "seg_id": "segment_2068",
+        "dur": 2.75
+      },
+      {
+        "seg_id": "segment_2076",
+        "dur": 2.2
+      },
+      {
+        "seg_id": "segment_2081",
+        "dur": 2.7
+      },
+      {
+        "seg_id": "segment_2083",
+        "dur": 1.45
+      },
+      {
+        "seg_id": "segment_2085",
+        "dur": 2.9
+      },
+      {
+        "seg_id": "segment_2086",
+        "dur": 1.8
+      },
+      {
+        "seg_id": "segment_2089",
+        "dur": 2.2
+      },
+      {
+        "seg_id": "segment_2097",
+        "dur": 2.7
+      },
+      {
+        "seg_id": "segment_2100",
+        "dur": 1.9
+      },
+      {
+        "seg_id": "segment_2104",
+        "dur": 2.9
+      },
+      {
+        "seg_id": "segment_2106",
+        "dur": 1.5
+      },
+      {
+        "seg_id": "segment_2107",
+        "dur": 2.8
+      },
+      {
+        "seg_id": "segment_2126",
+        "dur": 2.1
+      },
+      {
+        "seg_id": "segment_2127",
+        "dur": 2.7
+      },
+      {
+        "seg_id": "segment_2128",
+        "dur": 2.4
+      },
+      {
+        "seg_id": "segment_2129",
+        "dur": 2.8
+      },
+      {
+        "seg_id": "segment_2138",
+        "dur": 1.5
+      },
+      {
+        "seg_id": "segment_2149",
+        "dur": 1.5
+      },
+      {
+        "seg_id": "segment_2153",
+        "dur": 2.67
+      },
+      {
+        "seg_id": "segment_2154",
+        "dur": 2.07
+      },
+      {
+        "seg_id": "segment_2155",
+        "dur": 1.97
+      },
+      {
+        "seg_id": "segment_2156",
+        "dur": 1.92
+      },
+      {
+        "seg_id": "segment_2157",
+        "dur": 2.72
+      },
+      {
+        "seg_id": "segment_2160",
+        "dur": 2.85
+      },
+      {
+        "seg_id": "segment_2162",
+        "dur": 2.2
+      },
+      {
+        "seg_id": "segment_2167",
+        "dur": 2.6
+      },
+      {
+        "seg_id": "segment_2179",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_2203",
+        "dur": 2.4
+      },
+      {
+        "seg_id": "segment_2209",
+        "dur": 2.21
+      },
+      {
+        "seg_id": "segment_2210",
+        "dur": 2.13
+      },
+      {
+        "seg_id": "segment_2211",
+        "dur": 1.98
+      },
+      {
+        "seg_id": "segment_2213",
+        "dur": 2.86
+      },
+      {
+        "seg_id": "segment_2217",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_2220",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_2245",
+        "dur": 2.8
+      },
+      {
+        "seg_id": "segment_2251",
+        "dur": 2.65
+      },
+      {
+        "seg_id": "segment_2252",
+        "dur": 2.8
+      },
+      {
+        "seg_id": "segment_2255",
+        "dur": 2.75
+      },
+      {
+        "seg_id": "segment_2259",
+        "dur": 2.8
+      },
+      {
+        "seg_id": "segment_2261",
+        "dur": 1.9
+      },
+      {
+        "seg_id": "segment_2262",
+        "dur": 1.9
+      },
+      {
+        "seg_id": "segment_2264",
+        "dur": 1.0
+      },
+      {
+        "seg_id": "segment_2267",
+        "dur": 1.9
+      },
+      {
+        "seg_id": "segment_2281",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_2299",
+        "dur": 2.45
+      },
+      {
+        "seg_id": "segment_2302",
+        "dur": 1.76
+      },
+      {
+        "seg_id": "segment_2303",
+        "dur": 2.4
+      },
+      {
+        "seg_id": "segment_2305",
+        "dur": 2.46
+      },
+      {
+        "seg_id": "segment_2306",
+        "dur": 2.17
+      },
+      {
+        "seg_id": "segment_2308",
+        "dur": 2.76
+      },
+      {
+        "seg_id": "segment_2309",
+        "dur": 2.51
+      },
+      {
+        "seg_id": "segment_2311",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_2317",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_2318",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_2326",
+        "dur": 2.15
+      }
+    ],
+    "missing_audio": [],
+    "missing_text": [],
+    "issues": []
+  },
+  "bagri": {
+    "metadata_entries": 9275,
+    "audio_files": 9275,
+    "noise_entries": 0,
+    "speech_entries": 9275,
+    "passed": 9275,
+    "failed": 0,
+    "passed_duration_sec": 67663.47000000034,
+    "decoding_failures": [],
+    "silent_or_truncated": [],
+    "duration_mismatch": [],
+    "timestamp_exceeds_source": [],
+    "invalid_timestamp_interval": [],
+    "text_mismatches": [
+      "segment_7040",
+      "segment_7041",
+      "segment_7042",
+      "segment_7043",
+      "segment_7044",
+      "segment_7045",
+      "segment_7047",
+      "segment_7048",
+      "segment_7049",
+      "segment_7050",
+      "segment_7051",
+      "segment_7052",
+      "segment_7053",
+      "segment_7055",
+      "segment_7056",
+      "segment_7057",
+      "segment_7073",
+      "segment_7074",
+      "segment_7075",
+      "segment_7076",
+      "segment_7077",
+      "segment_7078",
+      "segment_7080",
+      "segment_7081",
+      "segment_7082",
+      "segment_7083",
+      "segment_7085",
+      "segment_7086",
+      "segment_7087",
+      "segment_7089",
+      "segment_7090",
+      "segment_7091",
+      "segment_7092",
+      "segment_7093",
+      "segment_7102",
+      "segment_7103",
+      "segment_7104",
+      "segment_7105",
+      "segment_7106",
+      "segment_7107",
+      "segment_7109",
+      "segment_7110",
+      "segment_7111",
+      "segment_7113",
+      "segment_7115",
+      "segment_7122",
+      "segment_7123",
+      "segment_7124",
+      "segment_7125",
+      "segment_7126",
+      "segment_7129",
+      "segment_7130",
+      "segment_7131",
+      "segment_7132",
+      "segment_7133",
+      "segment_7139",
+      "segment_7140",
+      "segment_7141",
+      "segment_7142",
+      "segment_7143",
+      "segment_7144",
+      "segment_7145",
+      "segment_7146",
+      "segment_7147",
+      "segment_7148",
+      "segment_7149",
+      "segment_7150",
+      "segment_7151",
+      "segment_7152",
+      "segment_7153",
+      "segment_7154",
+      "segment_7155",
+      "segment_7156",
+      "segment_7157",
+      "segment_7158",
+      "segment_7159",
+      "segment_7160",
+      "segment_7161",
+      "segment_7162",
+      "segment_7163",
+      "segment_7164",
+      "segment_7165",
+      "segment_7166",
+      "segment_7167",
+      "segment_7168",
+      "segment_7169",
+      "segment_7170",
+      "segment_7171",
+      "segment_7172",
+      "segment_7173",
+      "segment_7174",
+      "segment_7175",
+      "segment_7176",
+      "segment_7177",
+      "segment_7178",
+      "segment_7179",
+      "segment_7180",
+      "segment_7181",
+      "segment_7182"
+    ],
+    "digits_found": [
+      {
+        "seg_id": "segment_2020",
+        "digits": "12",
+        "text": "इतरिया जद बे बिंगी खिल्ली उड़ाव"
+      },
+      {
+        "seg_id": "segment_2738",
+        "digits": "1",
+        "text": "1तेरा शरीर को दियो तेरी आंख है"
+      }
+    ],
+    "long_clips_gt_30s": [],
+    "short_clips_lt_3s": [
+      {
+        "seg_id": "segment_0155",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_0157",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_0186",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_0208",
+        "dur": 2.22
+      },
+      {
+        "seg_id": "segment_0228",
+        "dur": 2.2
+      },
+      {
+        "seg_id": "segment_0236",
+        "dur": 2.2
+      },
+      {
+        "seg_id": "segment_0252",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_0306",
+        "dur": 2.85
+      },
+      {
+        "seg_id": "segment_0319",
+        "dur": 2.29
+      },
+      {
+        "seg_id": "segment_0346",
+        "dur": 2.4
+      },
+      {
+        "seg_id": "segment_0348",
+        "dur": 2.7
+      },
+      {
+        "seg_id": "segment_0363",
+        "dur": 2.7
+      },
+      {
+        "seg_id": "segment_0369",
+        "dur": 1.71
+      },
+      {
+        "seg_id": "segment_0374",
+        "dur": 1.88
+      },
+      {
+        "seg_id": "segment_0383",
+        "dur": 1.84
+      },
+      {
+        "seg_id": "segment_0387",
+        "dur": 2.82
+      },
+      {
+        "seg_id": "segment_0398",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_0401",
+        "dur": 2.8
+      },
+      {
+        "seg_id": "segment_0432",
+        "dur": 1.5
+      },
+      {
+        "seg_id": "segment_0435",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_0450",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_0571",
+        "dur": 2.76
+      },
+      {
+        "seg_id": "segment_0576",
+        "dur": 1.34
+      },
+      {
+        "seg_id": "segment_0588",
+        "dur": 2.76
+      },
+      {
+        "seg_id": "segment_0594",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_0600",
+        "dur": 2.76
+      },
+      {
+        "seg_id": "segment_0603",
+        "dur": 2.84
+      },
+      {
+        "seg_id": "segment_0605",
+        "dur": 2.74
+      },
+      {
+        "seg_id": "segment_0609",
+        "dur": 2.4
+      },
+      {
+        "seg_id": "segment_0621",
+        "dur": 2.82
+      },
+      {
+        "seg_id": "segment_0622",
+        "dur": 2.04
+      },
+      {
+        "seg_id": "segment_0625",
+        "dur": 2.3
+      },
+      {
+        "seg_id": "segment_0630",
+        "dur": 2.9
+      },
+      {
+        "seg_id": "segment_0640",
+        "dur": 2.42
+      },
+      {
+        "seg_id": "segment_0641",
+        "dur": 1.86
+      },
+      {
+        "seg_id": "segment_0642",
+        "dur": 1.6
+      },
+      {
+        "seg_id": "segment_0651",
+        "dur": 2.42
+      },
+      {
+        "seg_id": "segment_0676",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_0681",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_0683",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_0708",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_0728",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_0729",
+        "dur": 1.5
+      },
+      {
+        "seg_id": "segment_0735",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_0745",
+        "dur": 2.6
+      },
+      {
+        "seg_id": "segment_0765",
+        "dur": 2.9
+      },
+      {
+        "seg_id": "segment_0766",
+        "dur": 1.7
+      },
+      {
+        "seg_id": "segment_0771",
+        "dur": 2.6
+      },
+      {
+        "seg_id": "segment_0780",
+        "dur": 1.7
+      },
+      {
+        "seg_id": "segment_0783",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_0827",
+        "dur": 2.45
+      },
+      {
+        "seg_id": "segment_0847",
+        "dur": 2.76
+      },
+      {
+        "seg_id": "segment_0860",
+        "dur": 2.28
+      },
+      {
+        "seg_id": "segment_0862",
+        "dur": 2.36
+      },
+      {
+        "seg_id": "segment_0863",
+        "dur": 2.14
+      },
+      {
+        "seg_id": "segment_0867",
+        "dur": 2.56
+      },
+      {
+        "seg_id": "segment_0870",
+        "dur": 2.38
+      },
+      {
+        "seg_id": "segment_0874",
+        "dur": 2.96
+      },
+      {
+        "seg_id": "segment_0876",
+        "dur": 2.42
+      },
+      {
+        "seg_id": "segment_0880",
+        "dur": 2.28
+      },
+      {
+        "seg_id": "segment_0886",
+        "dur": 2.08
+      },
+      {
+        "seg_id": "segment_0891",
+        "dur": 2.24
+      },
+      {
+        "seg_id": "segment_0895",
+        "dur": 2.6
+      },
+      {
+        "seg_id": "segment_0896",
+        "dur": 2.12
+      },
+      {
+        "seg_id": "segment_0897",
+        "dur": 2.4
+      },
+      {
+        "seg_id": "segment_0934",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_0955",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_0970",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_0980",
+        "dur": 2.72
+      },
+      {
+        "seg_id": "segment_0996",
+        "dur": 1.9
+      },
+      {
+        "seg_id": "segment_0998",
+        "dur": 1.7
+      },
+      {
+        "seg_id": "segment_0999",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_1000",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_1003",
+        "dur": 0.9
+      },
+      {
+        "seg_id": "segment_1005",
+        "dur": 2.9
+      },
+      {
+        "seg_id": "segment_1008",
+        "dur": 2.7
+      },
+      {
+        "seg_id": "segment_1009",
+        "dur": 1.3
+      },
+      {
+        "seg_id": "segment_1010",
+        "dur": 1.2
+      },
+      {
+        "seg_id": "segment_1011",
+        "dur": 1.2
+      },
+      {
+        "seg_id": "segment_1018",
+        "dur": 2.9
+      },
+      {
+        "seg_id": "segment_1019",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_1023",
+        "dur": 2.3
+      },
+      {
+        "seg_id": "segment_1024",
+        "dur": 1.0
+      },
+      {
+        "seg_id": "segment_1027",
+        "dur": 2.6
+      },
+      {
+        "seg_id": "segment_1034",
+        "dur": 2.2
+      },
+      {
+        "seg_id": "segment_1037",
+        "dur": 1.0
+      },
+      {
+        "seg_id": "segment_1042",
+        "dur": 2.9
+      },
+      {
+        "seg_id": "segment_1043",
+        "dur": 1.1
+      },
+      {
+        "seg_id": "segment_1044",
+        "dur": 1.0
+      },
+      {
+        "seg_id": "segment_1045",
+        "dur": 1.0
+      },
+      {
+        "seg_id": "segment_1048",
+        "dur": 2.33
+      },
+      {
+        "seg_id": "segment_1067",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_1127",
+        "dur": 2.8
+      },
+      {
+        "seg_id": "segment_1144",
+        "dur": 2.6
+      },
+      {
+        "seg_id": "segment_1150",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_1201",
+        "dur": 2.8
+      },
+      {
+        "seg_id": "segment_1210",
+        "dur": 2.9
+      },
+      {
+        "seg_id": "segment_1212",
+        "dur": 2.3
+      },
+      {
+        "seg_id": "segment_1213",
+        "dur": 2.7
+      },
+      {
+        "seg_id": "segment_1217",
+        "dur": 2.6
+      },
+      {
+        "seg_id": "segment_1219",
+        "dur": 1.1
+      },
+      {
+        "seg_id": "segment_1220",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_1221",
+        "dur": 2.9
+      },
+      {
+        "seg_id": "segment_1223",
+        "dur": 2.2
+      },
+      {
+        "seg_id": "segment_1224",
+        "dur": 0.7
+      },
+      {
+        "seg_id": "segment_1228",
+        "dur": 2.6
+      },
+      {
+        "seg_id": "segment_1234",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_1236",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_1242",
+        "dur": 2.9
+      },
+      {
+        "seg_id": "segment_1245",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_1249",
+        "dur": 2.6
+      },
+      {
+        "seg_id": "segment_1251",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_1252",
+        "dur": 1.2
+      },
+      {
+        "seg_id": "segment_1254",
+        "dur": 2.9
+      },
+      {
+        "seg_id": "segment_1256",
+        "dur": 2.7
+      },
+      {
+        "seg_id": "segment_1258",
+        "dur": 2.1
+      },
+      {
+        "seg_id": "segment_1268",
+        "dur": 1.3
+      },
+      {
+        "seg_id": "segment_1272",
+        "dur": 1.5
+      },
+      {
+        "seg_id": "segment_1274",
+        "dur": 1.6
+      },
+      {
+        "seg_id": "segment_1276",
+        "dur": 1.5
+      },
+      {
+        "seg_id": "segment_1278",
+        "dur": 1.7
+      },
+      {
+        "seg_id": "segment_1280",
+        "dur": 2.9
+      },
+      {
+        "seg_id": "segment_1282",
+        "dur": 1.8
+      },
+      {
+        "seg_id": "segment_1296",
+        "dur": 2.7
+      },
+      {
+        "seg_id": "segment_1302",
+        "dur": 1.6
+      },
+      {
+        "seg_id": "segment_1311",
+        "dur": 2.58
+      },
+      {
+        "seg_id": "segment_1321",
+        "dur": 2.22
+      },
+      {
+        "seg_id": "segment_1326",
+        "dur": 2.96
+      },
+      {
+        "seg_id": "segment_1331",
+        "dur": 2.35
+      },
+      {
+        "seg_id": "segment_1333",
+        "dur": 1.87
+      },
+      {
+        "seg_id": "segment_1337",
+        "dur": 1.93
+      },
+      {
+        "seg_id": "segment_1338",
+        "dur": 2.89
+      },
+      {
+        "seg_id": "segment_1344",
+        "dur": 1.59
+      },
+      {
+        "seg_id": "segment_1364",
+        "dur": 2.06
+      },
+      {
+        "seg_id": "segment_1369",
+        "dur": 2.19
+      },
+      {
+        "seg_id": "segment_1376",
+        "dur": 2.87
+      },
+      {
+        "seg_id": "segment_1416",
+        "dur": 2.8
+      },
+      {
+        "seg_id": "segment_1475",
+        "dur": 2.89
+      },
+      {
+        "seg_id": "segment_1486",
+        "dur": 2.51
+      },
+      {
+        "seg_id": "segment_1500",
+        "dur": 2.29
+      },
+      {
+        "seg_id": "segment_1505",
+        "dur": 1.15
+      },
+      {
+        "seg_id": "segment_1506",
+        "dur": 1.64
+      },
+      {
+        "seg_id": "segment_1507",
+        "dur": 2.28
+      },
+      {
+        "seg_id": "segment_1512",
+        "dur": 1.9
+      },
+      {
+        "seg_id": "segment_1513",
+        "dur": 2.89
+      },
+      {
+        "seg_id": "segment_1521",
+        "dur": 2.54
+      },
+      {
+        "seg_id": "segment_1522",
+        "dur": 2.72
+      },
+      {
+        "seg_id": "segment_1526",
+        "dur": 2.47
+      },
+      {
+        "seg_id": "segment_1528",
+        "dur": 2.94
+      },
+      {
+        "seg_id": "segment_1532",
+        "dur": 2.98
+      },
+      {
+        "seg_id": "segment_1544",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_1546",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_1565",
+        "dur": 2.72
+      },
+      {
+        "seg_id": "segment_1583",
+        "dur": 1.7
+      },
+      {
+        "seg_id": "segment_1596",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_1601",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_1603",
+        "dur": 2.4
+      },
+      {
+        "seg_id": "segment_1606",
+        "dur": 1.5
+      },
+      {
+        "seg_id": "segment_1607",
+        "dur": 1.7
+      },
+      {
+        "seg_id": "segment_1628",
+        "dur": 1.6
+      },
+      {
+        "seg_id": "segment_1629",
+        "dur": 1.7
+      },
+      {
+        "seg_id": "segment_1632",
+        "dur": 2.9
+      },
+      {
+        "seg_id": "segment_1633",
+        "dur": 2.9
+      },
+      {
+        "seg_id": "segment_1636",
+        "dur": 2.4
+      },
+      {
+        "seg_id": "segment_1650",
+        "dur": 2.1
+      },
+      {
+        "seg_id": "segment_1651",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_1653",
+        "dur": 2.3
+      },
+      {
+        "seg_id": "segment_1655",
+        "dur": 2.7
+      },
+      {
+        "seg_id": "segment_1657",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_1660",
+        "dur": 2.4
+      },
+      {
+        "seg_id": "segment_1694",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_1711",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_1717",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_1744",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_1753",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_1796",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_1799",
+        "dur": 2.9
+      },
+      {
+        "seg_id": "segment_1919",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_2004",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_2062",
+        "dur": 1.58
+      },
+      {
+        "seg_id": "segment_2064",
+        "dur": 1.36
+      },
+      {
+        "seg_id": "segment_2078",
+        "dur": 1.9
+      },
+      {
+        "seg_id": "segment_2082",
+        "dur": 1.36
+      },
+      {
+        "seg_id": "segment_2087",
+        "dur": 2.94
+      },
+      {
+        "seg_id": "segment_2094",
+        "dur": 1.34
+      },
+      {
+        "seg_id": "segment_2105",
+        "dur": 1.42
+      },
+      {
+        "seg_id": "segment_2106",
+        "dur": 2.64
+      },
+      {
+        "seg_id": "segment_2107",
+        "dur": 1.5
+      },
+      {
+        "seg_id": "segment_2114",
+        "dur": 2.84
+      },
+      {
+        "seg_id": "segment_2121",
+        "dur": 2.12
+      },
+      {
+        "seg_id": "segment_2125",
+        "dur": 2.62
+      },
+      {
+        "seg_id": "segment_2126",
+        "dur": 2.38
+      },
+      {
+        "seg_id": "segment_2127",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_2131",
+        "dur": 2.1
+      },
+      {
+        "seg_id": "segment_2144",
+        "dur": 2.58
+      },
+      {
+        "seg_id": "segment_2153",
+        "dur": 1.9
+      },
+      {
+        "seg_id": "segment_2170",
+        "dur": 2.7
+      },
+      {
+        "seg_id": "segment_2202",
+        "dur": 2.2
+      },
+      {
+        "seg_id": "segment_2285",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_2295",
+        "dur": 2.2
+      },
+      {
+        "seg_id": "segment_2323",
+        "dur": 2.6
+      },
+      {
+        "seg_id": "segment_2324",
+        "dur": 2.2
+      },
+      {
+        "seg_id": "segment_2327",
+        "dur": 2.6
+      },
+      {
+        "seg_id": "segment_2347",
+        "dur": 2.45
+      },
+      {
+        "seg_id": "segment_2368",
+        "dur": 2.9
+      },
+      {
+        "seg_id": "segment_2377",
+        "dur": 2.92
+      },
+      {
+        "seg_id": "segment_2382",
+        "dur": 2.99
+      },
+      {
+        "seg_id": "segment_2414",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_2435",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_2445",
+        "dur": 1.2
+      },
+      {
+        "seg_id": "segment_2454",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_2461",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_2463",
+        "dur": 1.0
+      },
+      {
+        "seg_id": "segment_2466",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_2470",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_2479",
+        "dur": 1.5
+      },
+      {
+        "seg_id": "segment_2480",
+        "dur": 1.3
+      },
+      {
+        "seg_id": "segment_2481",
+        "dur": 0.8
+      },
+      {
+        "seg_id": "segment_2483",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_2484",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_2486",
+        "dur": 2.3
+      },
+      {
+        "seg_id": "segment_2493",
+        "dur": 1.8
+      },
+      {
+        "seg_id": "segment_2494",
+        "dur": 1.2
+      },
+      {
+        "seg_id": "segment_2495",
+        "dur": 2.3
+      },
+      {
+        "seg_id": "segment_2497",
+        "dur": 2.2
+      },
+      {
+        "seg_id": "segment_2500",
+        "dur": 1.2
+      },
+      {
+        "seg_id": "segment_2503",
+        "dur": 1.8
+      },
+      {
+        "seg_id": "segment_2505",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_2506",
+        "dur": 1.3
+      },
+      {
+        "seg_id": "segment_2507",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_2509",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_2513",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_2514",
+        "dur": 2.8
+      },
+      {
+        "seg_id": "segment_2517",
+        "dur": 1.8
+      },
+      {
+        "seg_id": "segment_2518",
+        "dur": 1.8
+      },
+      {
+        "seg_id": "segment_2522",
+        "dur": 1.2
+      },
+      {
+        "seg_id": "segment_2523",
+        "dur": 1.3
+      },
+      {
+        "seg_id": "segment_2524",
+        "dur": 1.0
+      },
+      {
+        "seg_id": "segment_2528",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_2538",
+        "dur": 2.2
+      },
+      {
+        "seg_id": "segment_2552",
+        "dur": 2.6
+      },
+      {
+        "seg_id": "segment_2554",
+        "dur": 1.7
+      },
+      {
+        "seg_id": "segment_2557",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_2559",
+        "dur": 2.1
+      },
+      {
+        "seg_id": "segment_2577",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_2578",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_2593",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_2602",
+        "dur": 1.6
+      },
+      {
+        "seg_id": "segment_2604",
+        "dur": 2.9
+      },
+      {
+        "seg_id": "segment_2628",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_2645",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_2677",
+        "dur": 2.44
+      },
+      {
+        "seg_id": "segment_2685",
+        "dur": 2.62
+      },
+      {
+        "seg_id": "segment_2687",
+        "dur": 1.86
+      },
+      {
+        "seg_id": "segment_2690",
+        "dur": 2.44
+      },
+      {
+        "seg_id": "segment_2693",
+        "dur": 2.6
+      },
+      {
+        "seg_id": "segment_2697",
+        "dur": 2.1
+      },
+      {
+        "seg_id": "segment_2699",
+        "dur": 1.92
+      },
+      {
+        "seg_id": "segment_2701",
+        "dur": 2.8
+      },
+      {
+        "seg_id": "segment_2706",
+        "dur": 2.54
+      },
+      {
+        "seg_id": "segment_2710",
+        "dur": 1.78
+      },
+      {
+        "seg_id": "segment_2731",
+        "dur": 2.68
+      },
+      {
+        "seg_id": "segment_2739",
+        "dur": 2.38
+      },
+      {
+        "seg_id": "segment_2745",
+        "dur": 2.26
+      },
+      {
+        "seg_id": "segment_2749",
+        "dur": 2.54
+      },
+      {
+        "seg_id": "segment_2752",
+        "dur": 2.88
+      },
+      {
+        "seg_id": "segment_2761",
+        "dur": 2.3
+      },
+      {
+        "seg_id": "segment_2766",
+        "dur": 2.24
+      },
+      {
+        "seg_id": "segment_2774",
+        "dur": 1.1
+      },
+      {
+        "seg_id": "segment_2783",
+        "dur": 2.72
+      },
+      {
+        "seg_id": "segment_2809",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_2862",
+        "dur": 2.76
+      },
+      {
+        "seg_id": "segment_2869",
+        "dur": 2.56
+      },
+      {
+        "seg_id": "segment_2875",
+        "dur": 2.66
+      },
+      {
+        "seg_id": "segment_2899",
+        "dur": 2.8
+      },
+      {
+        "seg_id": "segment_2900",
+        "dur": 1.7
+      },
+      {
+        "seg_id": "segment_2902",
+        "dur": 2.62
+      },
+      {
+        "seg_id": "segment_2916",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_2920",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_2921",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_2946",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_2962",
+        "dur": 2.45
+      },
+      {
+        "seg_id": "segment_2983",
+        "dur": 2.3
+      },
+      {
+        "seg_id": "segment_3023",
+        "dur": 2.53
+      },
+      {
+        "seg_id": "segment_3029",
+        "dur": 1.48
+      },
+      {
+        "seg_id": "segment_3051",
+        "dur": 1.7
+      },
+      {
+        "seg_id": "segment_3072",
+        "dur": 2.04
+      },
+      {
+        "seg_id": "segment_3073",
+        "dur": 2.9
+      },
+      {
+        "seg_id": "segment_3079",
+        "dur": 2.8
+      },
+      {
+        "seg_id": "segment_3117",
+        "dur": 1.9
+      },
+      {
+        "seg_id": "segment_3118",
+        "dur": 2.6
+      },
+      {
+        "seg_id": "segment_3119",
+        "dur": 2.2
+      },
+      {
+        "seg_id": "segment_3132",
+        "dur": 2.77
+      },
+      {
+        "seg_id": "segment_3191",
+        "dur": 2.8
+      },
+      {
+        "seg_id": "segment_3201",
+        "dur": 2.4
+      },
+      {
+        "seg_id": "segment_3202",
+        "dur": 2.7
+      },
+      {
+        "seg_id": "segment_3203",
+        "dur": 1.0
+      },
+      {
+        "seg_id": "segment_3213",
+        "dur": 1.6
+      },
+      {
+        "seg_id": "segment_3216",
+        "dur": 2.3
+      },
+      {
+        "seg_id": "segment_3221",
+        "dur": 1.5
+      },
+      {
+        "seg_id": "segment_3223",
+        "dur": 2.1
+      },
+      {
+        "seg_id": "segment_3226",
+        "dur": 2.7
+      },
+      {
+        "seg_id": "segment_3234",
+        "dur": 2.3
+      },
+      {
+        "seg_id": "segment_3235",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_3237",
+        "dur": 2.7
+      },
+      {
+        "seg_id": "segment_3239",
+        "dur": 2.6
+      },
+      {
+        "seg_id": "segment_3244",
+        "dur": 1.7
+      },
+      {
+        "seg_id": "segment_3248",
+        "dur": 0.8
+      },
+      {
+        "seg_id": "segment_3253",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_3254",
+        "dur": 1.7
+      },
+      {
+        "seg_id": "segment_3255",
+        "dur": 1.8
+      },
+      {
+        "seg_id": "segment_3256",
+        "dur": 2.2
+      },
+      {
+        "seg_id": "segment_3262",
+        "dur": 1.7
+      },
+      {
+        "seg_id": "segment_3264",
+        "dur": 1.2
+      },
+      {
+        "seg_id": "segment_3267",
+        "dur": 2.9
+      },
+      {
+        "seg_id": "segment_3268",
+        "dur": 2.9
+      },
+      {
+        "seg_id": "segment_3281",
+        "dur": 1.2
+      },
+      {
+        "seg_id": "segment_3283",
+        "dur": 1.6
+      },
+      {
+        "seg_id": "segment_3285",
+        "dur": 1.6
+      },
+      {
+        "seg_id": "segment_3286",
+        "dur": 1.7
+      },
+      {
+        "seg_id": "segment_3287",
+        "dur": 1.4
+      },
+      {
+        "seg_id": "segment_3291",
+        "dur": 2.7
+      },
+      {
+        "seg_id": "segment_3292",
+        "dur": 2.9
+      },
+      {
+        "seg_id": "segment_3293",
+        "dur": 1.6
+      },
+      {
+        "seg_id": "segment_3295",
+        "dur": 1.2
+      },
+      {
+        "seg_id": "segment_3298",
+        "dur": 2.7
+      },
+      {
+        "seg_id": "segment_3302",
+        "dur": 2.9
+      },
+      {
+        "seg_id": "segment_3305",
+        "dur": 2.7
+      },
+      {
+        "seg_id": "segment_3307",
+        "dur": 2.8
+      },
+      {
+        "seg_id": "segment_3309",
+        "dur": 2.1
+      },
+      {
+        "seg_id": "segment_3313",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_3314",
+        "dur": 2.2
+      },
+      {
+        "seg_id": "segment_3319",
+        "dur": 2.9
+      },
+      {
+        "seg_id": "segment_3320",
+        "dur": 2.8
+      },
+      {
+        "seg_id": "segment_3324",
+        "dur": 2.6
+      },
+      {
+        "seg_id": "segment_3329",
+        "dur": 1.8
+      },
+      {
+        "seg_id": "segment_3330",
+        "dur": 2.8
+      },
+      {
+        "seg_id": "segment_3340",
+        "dur": 2.4
+      },
+      {
+        "seg_id": "segment_3342",
+        "dur": 2.3
+      },
+      {
+        "seg_id": "segment_3346",
+        "dur": 2.8
+      },
+      {
+        "seg_id": "segment_3352",
+        "dur": 2.6
+      },
+      {
+        "seg_id": "segment_3406",
+        "dur": 2.2
+      },
+      {
+        "seg_id": "segment_3420",
+        "dur": 2.94
+      },
+      {
+        "seg_id": "segment_3423",
+        "dur": 2.04
+      },
+      {
+        "seg_id": "segment_3424",
+        "dur": 1.06
+      },
+      {
+        "seg_id": "segment_3426",
+        "dur": 2.66
+      },
+      {
+        "seg_id": "segment_3427",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_3431",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_3435",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_3436",
+        "dur": 2.82
+      },
+      {
+        "seg_id": "segment_3437",
+        "dur": 1.63
+      },
+      {
+        "seg_id": "segment_3439",
+        "dur": 2.96
+      },
+      {
+        "seg_id": "segment_3442",
+        "dur": 2.42
+      },
+      {
+        "seg_id": "segment_3449",
+        "dur": 2.7
+      },
+      {
+        "seg_id": "segment_3463",
+        "dur": 2.06
+      },
+      {
+        "seg_id": "segment_3466",
+        "dur": 1.2
+      },
+      {
+        "seg_id": "segment_3467",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_3468",
+        "dur": 1.9
+      },
+      {
+        "seg_id": "segment_3469",
+        "dur": 2.75
+      },
+      {
+        "seg_id": "segment_3474",
+        "dur": 2.24
+      },
+      {
+        "seg_id": "segment_3476",
+        "dur": 2.12
+      },
+      {
+        "seg_id": "segment_3479",
+        "dur": 1.38
+      },
+      {
+        "seg_id": "segment_3484",
+        "dur": 1.85
+      },
+      {
+        "seg_id": "segment_3486",
+        "dur": 2.21
+      },
+      {
+        "seg_id": "segment_3488",
+        "dur": 2.12
+      },
+      {
+        "seg_id": "segment_3489",
+        "dur": 2.15
+      },
+      {
+        "seg_id": "segment_3490",
+        "dur": 2.11
+      },
+      {
+        "seg_id": "segment_3491",
+        "dur": 1.8
+      },
+      {
+        "seg_id": "segment_3493",
+        "dur": 2.64
+      },
+      {
+        "seg_id": "segment_3494",
+        "dur": 2.4
+      },
+      {
+        "seg_id": "segment_3499",
+        "dur": 2.79
+      },
+      {
+        "seg_id": "segment_3516",
+        "dur": 1.83
+      },
+      {
+        "seg_id": "segment_3538",
+        "dur": 2.59
+      },
+      {
+        "seg_id": "segment_3540",
+        "dur": 2.4
+      },
+      {
+        "seg_id": "segment_3550",
+        "dur": 2.28
+      },
+      {
+        "seg_id": "segment_3551",
+        "dur": 1.97
+      },
+      {
+        "seg_id": "segment_3553",
+        "dur": 1.63
+      },
+      {
+        "seg_id": "segment_3616",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_3631",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_3660",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_3663",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_3669",
+        "dur": 1.0
+      },
+      {
+        "seg_id": "segment_3670",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_3671",
+        "dur": 1.5
+      },
+      {
+        "seg_id": "segment_3680",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_3738",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_3740",
+        "dur": 2.79
+      },
+      {
+        "seg_id": "segment_3742",
+        "dur": 2.83
+      },
+      {
+        "seg_id": "segment_3743",
+        "dur": 2.12
+      },
+      {
+        "seg_id": "segment_3744",
+        "dur": 2.73
+      },
+      {
+        "seg_id": "segment_3747",
+        "dur": 2.38
+      },
+      {
+        "seg_id": "segment_3748",
+        "dur": 2.6
+      },
+      {
+        "seg_id": "segment_3750",
+        "dur": 1.21
+      },
+      {
+        "seg_id": "segment_3771",
+        "dur": 2.49
+      },
+      {
+        "seg_id": "segment_3773",
+        "dur": 1.97
+      },
+      {
+        "seg_id": "segment_3775",
+        "dur": 2.94
+      },
+      {
+        "seg_id": "segment_3786",
+        "dur": 2.02
+      },
+      {
+        "seg_id": "segment_3787",
+        "dur": 2.98
+      },
+      {
+        "seg_id": "segment_3792",
+        "dur": 2.29
+      },
+      {
+        "seg_id": "segment_3794",
+        "dur": 2.75
+      },
+      {
+        "seg_id": "segment_3798",
+        "dur": 2.47
+      },
+      {
+        "seg_id": "segment_3805",
+        "dur": 2.65
+      },
+      {
+        "seg_id": "segment_3811",
+        "dur": 2.06
+      },
+      {
+        "seg_id": "segment_3814",
+        "dur": 2.36
+      },
+      {
+        "seg_id": "segment_3815",
+        "dur": 1.51
+      },
+      {
+        "seg_id": "segment_3824",
+        "dur": 2.27
+      },
+      {
+        "seg_id": "segment_3825",
+        "dur": 2.26
+      },
+      {
+        "seg_id": "segment_3826",
+        "dur": 2.54
+      },
+      {
+        "seg_id": "segment_3827",
+        "dur": 1.81
+      },
+      {
+        "seg_id": "segment_3833",
+        "dur": 1.72
+      },
+      {
+        "seg_id": "segment_3834",
+        "dur": 2.66
+      },
+      {
+        "seg_id": "segment_3837",
+        "dur": 2.69
+      },
+      {
+        "seg_id": "segment_3842",
+        "dur": 2.71
+      },
+      {
+        "seg_id": "segment_3846",
+        "dur": 2.75
+      },
+      {
+        "seg_id": "segment_3847",
+        "dur": 2.91
+      },
+      {
+        "seg_id": "segment_3850",
+        "dur": 2.54
+      },
+      {
+        "seg_id": "segment_3851",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_3861",
+        "dur": 2.8
+      },
+      {
+        "seg_id": "segment_3877",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_3933",
+        "dur": 2.63
+      },
+      {
+        "seg_id": "segment_3988",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_3997",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_4003",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_4006",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_4011",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_4020",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_4024",
+        "dur": 1.5
+      },
+      {
+        "seg_id": "segment_4031",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_4052",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_4053",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_4057",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_4063",
+        "dur": 2.72
+      },
+      {
+        "seg_id": "segment_4086",
+        "dur": 2.8
+      },
+      {
+        "seg_id": "segment_4093",
+        "dur": 1.8
+      },
+      {
+        "seg_id": "segment_4100",
+        "dur": 2.48
+      },
+      {
+        "seg_id": "segment_4102",
+        "dur": 2.54
+      },
+      {
+        "seg_id": "segment_4119",
+        "dur": 2.76
+      },
+      {
+        "seg_id": "segment_4127",
+        "dur": 2.49
+      },
+      {
+        "seg_id": "segment_4128",
+        "dur": 2.29
+      },
+      {
+        "seg_id": "segment_4130",
+        "dur": 0.5
+      },
+      {
+        "seg_id": "segment_4134",
+        "dur": 1.66
+      },
+      {
+        "seg_id": "segment_4135",
+        "dur": 1.57
+      },
+      {
+        "seg_id": "segment_4136",
+        "dur": 2.62
+      },
+      {
+        "seg_id": "segment_4146",
+        "dur": 2.45
+      },
+      {
+        "seg_id": "segment_4149",
+        "dur": 2.35
+      },
+      {
+        "seg_id": "segment_4150",
+        "dur": 1.9
+      },
+      {
+        "seg_id": "segment_4165",
+        "dur": 1.54
+      },
+      {
+        "seg_id": "segment_4166",
+        "dur": 1.73
+      },
+      {
+        "seg_id": "segment_4167",
+        "dur": 2.3
+      },
+      {
+        "seg_id": "segment_4168",
+        "dur": 2.23
+      },
+      {
+        "seg_id": "segment_4172",
+        "dur": 0.68
+      },
+      {
+        "seg_id": "segment_4173",
+        "dur": 2.23
+      },
+      {
+        "seg_id": "segment_4179",
+        "dur": 2.83
+      },
+      {
+        "seg_id": "segment_4180",
+        "dur": 1.9
+      },
+      {
+        "seg_id": "segment_4182",
+        "dur": 2.06
+      },
+      {
+        "seg_id": "segment_4185",
+        "dur": 1.8
+      },
+      {
+        "seg_id": "segment_4193",
+        "dur": 1.77
+      },
+      {
+        "seg_id": "segment_4194",
+        "dur": 2.91
+      },
+      {
+        "seg_id": "segment_4195",
+        "dur": 1.07
+      },
+      {
+        "seg_id": "segment_4198",
+        "dur": 2.47
+      },
+      {
+        "seg_id": "segment_4201",
+        "dur": 2.92
+      },
+      {
+        "seg_id": "segment_4203",
+        "dur": 2.45
+      },
+      {
+        "seg_id": "segment_4208",
+        "dur": 2.09
+      },
+      {
+        "seg_id": "segment_4211",
+        "dur": 1.9
+      },
+      {
+        "seg_id": "segment_4212",
+        "dur": 2.29
+      },
+      {
+        "seg_id": "segment_4213",
+        "dur": 2.31
+      },
+      {
+        "seg_id": "segment_4217",
+        "dur": 2.88
+      },
+      {
+        "seg_id": "segment_4220",
+        "dur": 2.36
+      },
+      {
+        "seg_id": "segment_4221",
+        "dur": 2.02
+      },
+      {
+        "seg_id": "segment_4225",
+        "dur": 1.68
+      },
+      {
+        "seg_id": "segment_4226",
+        "dur": 2.37
+      },
+      {
+        "seg_id": "segment_4299",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_4329",
+        "dur": 2.76
+      },
+      {
+        "seg_id": "segment_4339",
+        "dur": 2.34
+      },
+      {
+        "seg_id": "segment_4344",
+        "dur": 1.76
+      },
+      {
+        "seg_id": "segment_4347",
+        "dur": 2.68
+      },
+      {
+        "seg_id": "segment_4369",
+        "dur": 2.82
+      },
+      {
+        "seg_id": "segment_4373",
+        "dur": 2.4
+      },
+      {
+        "seg_id": "segment_4389",
+        "dur": 2.54
+      },
+      {
+        "seg_id": "segment_4454",
+        "dur": 2.45
+      },
+      {
+        "seg_id": "segment_4474",
+        "dur": 2.82
+      },
+      {
+        "seg_id": "segment_4481",
+        "dur": 2.84
+      },
+      {
+        "seg_id": "segment_4503",
+        "dur": 1.83
+      },
+      {
+        "seg_id": "segment_4505",
+        "dur": 2.29
+      },
+      {
+        "seg_id": "segment_4509",
+        "dur": 2.8
+      },
+      {
+        "seg_id": "segment_4511",
+        "dur": 2.9
+      },
+      {
+        "seg_id": "segment_4519",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_4522",
+        "dur": 2.9
+      },
+      {
+        "seg_id": "segment_4523",
+        "dur": 2.2
+      },
+      {
+        "seg_id": "segment_4524",
+        "dur": 1.5
+      },
+      {
+        "seg_id": "segment_4544",
+        "dur": 2.8
+      },
+      {
+        "seg_id": "segment_4546",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_4562",
+        "dur": 2.7
+      },
+      {
+        "seg_id": "segment_4567",
+        "dur": 1.4
+      },
+      {
+        "seg_id": "segment_4585",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_4587",
+        "dur": 2.8
+      },
+      {
+        "seg_id": "segment_4591",
+        "dur": 1.5
+      },
+      {
+        "seg_id": "segment_4593",
+        "dur": 2.3
+      },
+      {
+        "seg_id": "segment_4595",
+        "dur": 0.9
+      },
+      {
+        "seg_id": "segment_4598",
+        "dur": 1.9
+      },
+      {
+        "seg_id": "segment_4600",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_4601",
+        "dur": 2.7
+      },
+      {
+        "seg_id": "segment_4604",
+        "dur": 2.7
+      },
+      {
+        "seg_id": "segment_4605",
+        "dur": 1.6
+      },
+      {
+        "seg_id": "segment_4613",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_4622",
+        "dur": 2.4
+      },
+      {
+        "seg_id": "segment_4625",
+        "dur": 2.1
+      },
+      {
+        "seg_id": "segment_4628",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_4631",
+        "dur": 2.3
+      },
+      {
+        "seg_id": "segment_4632",
+        "dur": 2.8
+      },
+      {
+        "seg_id": "segment_4633",
+        "dur": 1.3
+      },
+      {
+        "seg_id": "segment_4634",
+        "dur": 2.9
+      },
+      {
+        "seg_id": "segment_4648",
+        "dur": 2.76
+      },
+      {
+        "seg_id": "segment_4665",
+        "dur": 1.7
+      },
+      {
+        "seg_id": "segment_4667",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_4670",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_4679",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_4681",
+        "dur": 1.9
+      },
+      {
+        "seg_id": "segment_4683",
+        "dur": 2.6
+      },
+      {
+        "seg_id": "segment_4687",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_4700",
+        "dur": 2.9
+      },
+      {
+        "seg_id": "segment_4701",
+        "dur": 2.6
+      },
+      {
+        "seg_id": "segment_4708",
+        "dur": 2.7
+      },
+      {
+        "seg_id": "segment_4709",
+        "dur": 1.6
+      },
+      {
+        "seg_id": "segment_4729",
+        "dur": 2.9
+      },
+      {
+        "seg_id": "segment_4735",
+        "dur": 2.7
+      },
+      {
+        "seg_id": "segment_4746",
+        "dur": 1.0
+      },
+      {
+        "seg_id": "segment_4765",
+        "dur": 1.38
+      },
+      {
+        "seg_id": "segment_4771",
+        "dur": 1.44
+      },
+      {
+        "seg_id": "segment_4772",
+        "dur": 1.4
+      },
+      {
+        "seg_id": "segment_4777",
+        "dur": 1.14
+      },
+      {
+        "seg_id": "segment_4780",
+        "dur": 1.66
+      },
+      {
+        "seg_id": "segment_4782",
+        "dur": 1.42
+      },
+      {
+        "seg_id": "segment_4786",
+        "dur": 2.32
+      },
+      {
+        "seg_id": "segment_4788",
+        "dur": 1.34
+      },
+      {
+        "seg_id": "segment_4791",
+        "dur": 1.7
+      },
+      {
+        "seg_id": "segment_4797",
+        "dur": 1.74
+      },
+      {
+        "seg_id": "segment_4798",
+        "dur": 1.58
+      },
+      {
+        "seg_id": "segment_4803",
+        "dur": 2.92
+      },
+      {
+        "seg_id": "segment_4804",
+        "dur": 2.46
+      },
+      {
+        "seg_id": "segment_4805",
+        "dur": 1.42
+      },
+      {
+        "seg_id": "segment_4807",
+        "dur": 2.98
+      },
+      {
+        "seg_id": "segment_4808",
+        "dur": 2.46
+      },
+      {
+        "seg_id": "segment_4810",
+        "dur": 2.32
+      },
+      {
+        "seg_id": "segment_4828",
+        "dur": 2.14
+      },
+      {
+        "seg_id": "segment_4839",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_4841",
+        "dur": 2.7
+      },
+      {
+        "seg_id": "segment_4855",
+        "dur": 2.24
+      },
+      {
+        "seg_id": "segment_4862",
+        "dur": 2.04
+      },
+      {
+        "seg_id": "segment_4864",
+        "dur": 2.38
+      },
+      {
+        "seg_id": "segment_4866",
+        "dur": 1.96
+      },
+      {
+        "seg_id": "segment_4909",
+        "dur": 2.76
+      },
+      {
+        "seg_id": "segment_4910",
+        "dur": 2.02
+      },
+      {
+        "seg_id": "segment_4918",
+        "dur": 1.34
+      },
+      {
+        "seg_id": "segment_4929",
+        "dur": 2.82
+      },
+      {
+        "seg_id": "segment_4930",
+        "dur": 1.74
+      },
+      {
+        "seg_id": "segment_4932",
+        "dur": 1.58
+      },
+      {
+        "seg_id": "segment_4942",
+        "dur": 2.6
+      },
+      {
+        "seg_id": "segment_4945",
+        "dur": 2.46
+      },
+      {
+        "seg_id": "segment_4955",
+        "dur": 2.94
+      },
+      {
+        "seg_id": "segment_4970",
+        "dur": 0.5
+      },
+      {
+        "seg_id": "segment_4990",
+        "dur": 1.98
+      },
+      {
+        "seg_id": "segment_4996",
+        "dur": 2.88
+      },
+      {
+        "seg_id": "segment_5007",
+        "dur": 2.8
+      },
+      {
+        "seg_id": "segment_5033",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_5034",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_5042",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_5156",
+        "dur": 2.92
+      },
+      {
+        "seg_id": "segment_5172",
+        "dur": 2.48
+      },
+      {
+        "seg_id": "segment_5186",
+        "dur": 2.41
+      },
+      {
+        "seg_id": "segment_5192",
+        "dur": 2.13
+      },
+      {
+        "seg_id": "segment_5194",
+        "dur": 2.52
+      },
+      {
+        "seg_id": "segment_5200",
+        "dur": 2.44
+      },
+      {
+        "seg_id": "segment_5218",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_5219",
+        "dur": 1.0
+      },
+      {
+        "seg_id": "segment_5225",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_5226",
+        "dur": 1.0
+      },
+      {
+        "seg_id": "segment_5227",
+        "dur": 1.5
+      },
+      {
+        "seg_id": "segment_5488",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_5598",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_5691",
+        "dur": 2.76
+      },
+      {
+        "seg_id": "segment_5745",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_5781",
+        "dur": 2.91
+      },
+      {
+        "seg_id": "segment_5806",
+        "dur": 2.65
+      },
+      {
+        "seg_id": "segment_5807",
+        "dur": 1.0
+      },
+      {
+        "seg_id": "segment_5809",
+        "dur": 2.87
+      },
+      {
+        "seg_id": "segment_5811",
+        "dur": 2.7
+      },
+      {
+        "seg_id": "segment_5825",
+        "dur": 2.49
+      },
+      {
+        "seg_id": "segment_5827",
+        "dur": 1.68
+      },
+      {
+        "seg_id": "segment_5828",
+        "dur": 0.97
+      },
+      {
+        "seg_id": "segment_5829",
+        "dur": 1.29
+      },
+      {
+        "seg_id": "segment_5830",
+        "dur": 1.92
+      },
+      {
+        "seg_id": "segment_5832",
+        "dur": 0.99
+      },
+      {
+        "seg_id": "segment_5833",
+        "dur": 2.39
+      },
+      {
+        "seg_id": "segment_5846",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_5853",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_5874",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_5875",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_5878",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_5902",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_5903",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_5917",
+        "dur": 2.36
+      },
+      {
+        "seg_id": "segment_5918",
+        "dur": 1.76
+      },
+      {
+        "seg_id": "segment_5927",
+        "dur": 1.78
+      },
+      {
+        "seg_id": "segment_5936",
+        "dur": 1.74
+      },
+      {
+        "seg_id": "segment_5969",
+        "dur": 1.54
+      },
+      {
+        "seg_id": "segment_5984",
+        "dur": 2.64
+      },
+      {
+        "seg_id": "segment_5989",
+        "dur": 1.97
+      },
+      {
+        "seg_id": "segment_5990",
+        "dur": 1.7
+      },
+      {
+        "seg_id": "segment_5991",
+        "dur": 1.83
+      },
+      {
+        "seg_id": "segment_6073",
+        "dur": 2.76
+      },
+      {
+        "seg_id": "segment_6086",
+        "dur": 2.54
+      },
+      {
+        "seg_id": "segment_6108",
+        "dur": 2.64
+      },
+      {
+        "seg_id": "segment_6165",
+        "dur": 2.84
+      },
+      {
+        "seg_id": "segment_6182",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_6230",
+        "dur": 2.75
+      },
+      {
+        "seg_id": "segment_6333",
+        "dur": 2.9
+      },
+      {
+        "seg_id": "segment_6382",
+        "dur": 2.9
+      },
+      {
+        "seg_id": "segment_6392",
+        "dur": 2.36
+      },
+      {
+        "seg_id": "segment_6405",
+        "dur": 2.48
+      },
+      {
+        "seg_id": "segment_6408",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_6430",
+        "dur": 2.02
+      },
+      {
+        "seg_id": "segment_6435",
+        "dur": 2.3
+      },
+      {
+        "seg_id": "segment_6436",
+        "dur": 2.7
+      },
+      {
+        "seg_id": "segment_6440",
+        "dur": 2.65
+      },
+      {
+        "seg_id": "segment_6451",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_6470",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_6492",
+        "dur": 2.85
+      },
+      {
+        "seg_id": "segment_6535",
+        "dur": 2.29
+      },
+      {
+        "seg_id": "segment_6548",
+        "dur": 2.74
+      },
+      {
+        "seg_id": "segment_6551",
+        "dur": 2.52
+      },
+      {
+        "seg_id": "segment_6552",
+        "dur": 2.13
+      },
+      {
+        "seg_id": "segment_6555",
+        "dur": 2.58
+      },
+      {
+        "seg_id": "segment_6556",
+        "dur": 2.96
+      },
+      {
+        "seg_id": "segment_6558",
+        "dur": 2.71
+      },
+      {
+        "seg_id": "segment_6559",
+        "dur": 1.67
+      },
+      {
+        "seg_id": "segment_6561",
+        "dur": 1.31
+      },
+      {
+        "seg_id": "segment_6563",
+        "dur": 2.57
+      },
+      {
+        "seg_id": "segment_6564",
+        "dur": 1.71
+      },
+      {
+        "seg_id": "segment_6570",
+        "dur": 2.89
+      },
+      {
+        "seg_id": "segment_6577",
+        "dur": 2.8
+      },
+      {
+        "seg_id": "segment_6585",
+        "dur": 2.85
+      },
+      {
+        "seg_id": "segment_6586",
+        "dur": 2.72
+      },
+      {
+        "seg_id": "segment_6590",
+        "dur": 2.48
+      },
+      {
+        "seg_id": "segment_6595",
+        "dur": 2.66
+      },
+      {
+        "seg_id": "segment_6618",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_6619",
+        "dur": 2.3
+      },
+      {
+        "seg_id": "segment_6655",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_6736",
+        "dur": 2.9
+      },
+      {
+        "seg_id": "segment_6759",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_6772",
+        "dur": 2.6
+      },
+      {
+        "seg_id": "segment_6783",
+        "dur": 1.8
+      },
+      {
+        "seg_id": "segment_6794",
+        "dur": 2.8
+      },
+      {
+        "seg_id": "segment_6822",
+        "dur": 2.4
+      },
+      {
+        "seg_id": "segment_6872",
+        "dur": 2.65
+      },
+      {
+        "seg_id": "segment_6877",
+        "dur": 2.53
+      },
+      {
+        "seg_id": "segment_6879",
+        "dur": 2.05
+      },
+      {
+        "seg_id": "segment_6883",
+        "dur": 1.83
+      },
+      {
+        "seg_id": "segment_6893",
+        "dur": 2.73
+      },
+      {
+        "seg_id": "segment_6900",
+        "dur": 2.68
+      },
+      {
+        "seg_id": "segment_6911",
+        "dur": 2.69
+      },
+      {
+        "seg_id": "segment_6938",
+        "dur": 2.3
+      },
+      {
+        "seg_id": "segment_6951",
+        "dur": 2.8
+      },
+      {
+        "seg_id": "segment_6975",
+        "dur": 2.29
+      },
+      {
+        "seg_id": "segment_7102",
+        "dur": 2.21
+      },
+      {
+        "seg_id": "segment_7118",
+        "dur": 2.42
+      },
+      {
+        "seg_id": "segment_7122",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_7138",
+        "dur": 1.42
+      },
+      {
+        "seg_id": "segment_7139",
+        "dur": 2.76
+      },
+      {
+        "seg_id": "segment_7102",
+        "dur": 2.21
+      },
+      {
+        "seg_id": "segment_7122",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_7139",
+        "dur": 2.76
+      },
+      {
+        "seg_id": "segment_7185",
+        "dur": 2.56
+      },
+      {
+        "seg_id": "segment_7198",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_7240",
+        "dur": 2.52
+      },
+      {
+        "seg_id": "segment_7243",
+        "dur": 2.8
+      },
+      {
+        "seg_id": "segment_7251",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_7263",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_7269",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_7360",
+        "dur": 2.89
+      },
+      {
+        "seg_id": "segment_7486",
+        "dur": 2.96
+      },
+      {
+        "seg_id": "segment_7507",
+        "dur": 2.26
+      },
+      {
+        "seg_id": "segment_7519",
+        "dur": 2.9
+      },
+      {
+        "seg_id": "segment_7602",
+        "dur": 2.18
+      },
+      {
+        "seg_id": "segment_7630",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_7676",
+        "dur": 2.75
+      },
+      {
+        "seg_id": "segment_7744",
+        "dur": 2.9
+      },
+      {
+        "seg_id": "segment_7749",
+        "dur": 2.72
+      },
+      {
+        "seg_id": "segment_7884",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_7957",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_8022",
+        "dur": 2.31
+      },
+      {
+        "seg_id": "segment_8052",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_8082",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_8286",
+        "dur": 2.65
+      },
+      {
+        "seg_id": "segment_8329",
+        "dur": 2.9
+      },
+      {
+        "seg_id": "segment_8331",
+        "dur": 2.4
+      },
+      {
+        "seg_id": "segment_8339",
+        "dur": 2.4
+      },
+      {
+        "seg_id": "segment_8399",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_8404",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_8447",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_8522",
+        "dur": 2.75
+      },
+      {
+        "seg_id": "segment_8578",
+        "dur": 2.24
+      },
+      {
+        "seg_id": "segment_8640",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_8701",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_8756",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_8827",
+        "dur": 1.5
+      },
+      {
+        "seg_id": "segment_8898",
+        "dur": 2.8
+      },
+      {
+        "seg_id": "segment_8922",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_9054",
+        "dur": 2.66
+      },
+      {
+        "seg_id": "segment_9073",
+        "dur": 2.68
+      },
+      {
+        "seg_id": "segment_9075",
+        "dur": 1.0
+      },
+      {
+        "seg_id": "segment_9090",
+        "dur": 2.6
+      },
+      {
+        "seg_id": "segment_9114",
+        "dur": 2.4
+      },
+      {
+        "seg_id": "segment_9127",
+        "dur": 2.9
+      },
+      {
+        "seg_id": "segment_9140",
+        "dur": 2.8
+      },
+      {
+        "seg_id": "segment_9141",
+        "dur": 1.1
+      },
+      {
+        "seg_id": "segment_9142",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_9235",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_9245",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_9247",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_9256",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_9261",
+        "dur": 1.5
+      },
+      {
+        "seg_id": "segment_9263",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_9294",
+        "dur": 2.7
+      },
+      {
+        "seg_id": "segment_9309",
+        "dur": 2.65
+      },
+      {
+        "seg_id": "segment_9328",
+        "dur": 2.76
+      },
+      {
+        "seg_id": "segment_9334",
+        "dur": 2.42
+      },
+      {
+        "seg_id": "segment_9343",
+        "dur": 2.26
+      },
+      {
+        "seg_id": "segment_9359",
+        "dur": 2.9
+      },
+      {
+        "seg_id": "segment_9365",
+        "dur": 2.6
+      },
+      {
+        "seg_id": "segment_9375",
+        "dur": 2.9
+      },
+      {
+        "seg_id": "segment_9391",
+        "dur": 2.7
+      },
+      {
+        "seg_id": "segment_9514",
+        "dur": 2.65
+      },
+      {
+        "seg_id": "segment_9535",
+        "dur": 2.61
+      },
+      {
+        "seg_id": "segment_9541",
+        "dur": 2.64
+      },
+      {
+        "seg_id": "segment_9548",
+        "dur": 2.17
+      },
+      {
+        "seg_id": "segment_9550",
+        "dur": 1.72
+      },
+      {
+        "seg_id": "segment_9570",
+        "dur": 2.46
+      },
+      {
+        "seg_id": "segment_9572",
+        "dur": 2.62
+      },
+      {
+        "seg_id": "segment_9662",
+        "dur": 2.48
+      },
+      {
+        "seg_id": "segment_9664",
+        "dur": 2.78
+      },
+      {
+        "seg_id": "segment_9602",
+        "dur": 2.63
+      },
+      {
+        "seg_id": "segment_9608",
+        "dur": 2.59
+      },
+      {
+        "seg_id": "segment_9610",
+        "dur": 2.24
+      },
+      {
+        "seg_id": "segment_9616",
+        "dur": 2.11
+      },
+      {
+        "seg_id": "segment_9619",
+        "dur": 2.91
+      },
+      {
+        "seg_id": "segment_9621",
+        "dur": 2.2
+      },
+      {
+        "seg_id": "segment_9626",
+        "dur": 2.13
+      },
+      {
+        "seg_id": "segment_9635",
+        "dur": 2.13
+      },
+      {
+        "seg_id": "segment_9673",
+        "dur": 2.9
+      },
+      {
+        "seg_id": "segment_9725",
+        "dur": 1.0
+      },
+      {
+        "seg_id": "segment_9774",
+        "dur": 2.8
+      },
+      {
+        "seg_id": "segment_9785",
+        "dur": 2.98
+      },
+      {
+        "seg_id": "segment_9819",
+        "dur": 1.84
+      },
+      {
+        "seg_id": "segment_9853",
+        "dur": 2.8
+      },
+      {
+        "seg_id": "segment_9877",
+        "dur": 2.76
+      },
+      {
+        "seg_id": "segment_9946",
+        "dur": 2.94
+      },
+      {
+        "seg_id": "segment_9955",
+        "dur": 2.42
+      },
+      {
+        "seg_id": "segment_9957",
+        "dur": 1.06
+      },
+      {
+        "seg_id": "segment_9958",
+        "dur": 2.56
+      },
+      {
+        "seg_id": "segment_9959",
+        "dur": 1.0
+      },
+      {
+        "seg_id": "segment_9970",
+        "dur": 2.02
+      },
+      {
+        "seg_id": "segment_9988",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_10036",
+        "dur": 2.8
+      },
+      {
+        "seg_id": "segment_10066",
+        "dur": 2.66
+      },
+      {
+        "seg_id": "segment_10092",
+        "dur": 2.95
+      },
+      {
+        "seg_id": "segment_10122",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_10133",
+        "dur": 2.7
+      },
+      {
+        "seg_id": "segment_10146",
+        "dur": 2.44
+      },
+      {
+        "seg_id": "segment_10151",
+        "dur": 1.3
+      },
+      {
+        "seg_id": "segment_10155",
+        "dur": 2.54
+      },
+      {
+        "seg_id": "segment_10164",
+        "dur": 1.16
+      },
+      {
+        "seg_id": "segment_10175",
+        "dur": 2.84
+      },
+      {
+        "seg_id": "segment_10272",
+        "dur": 2.6
+      }
+    ],
+    "missing_audio": [],
+    "missing_text": [],
+    "issues": []
+  },
+  "hadothi": {
+    "metadata_entries": 6730,
+    "audio_files": 6730,
+    "noise_entries": 0,
+    "speech_entries": 6730,
+    "passed": 6730,
+    "failed": 0,
+    "passed_duration_sec": 64160.78400000006,
+    "decoding_failures": [],
+    "silent_or_truncated": [],
+    "duration_mismatch": [],
+    "timestamp_exceeds_source": [],
+    "invalid_timestamp_interval": [],
+    "text_mismatches": [],
+    "digits_found": [
+      {
+        "seg_id": "segment_2470",
+        "digits": "12",
+        "text": "फेर इसू ने चेला सुखी जद मन था "
+      },
+      {
+        "seg_id": "segment_3537",
+        "digits": "12",
+        "text": "पेर एक बार जदो वाका लारा रोटी "
+      }
+    ],
+    "long_clips_gt_30s": [],
+    "short_clips_lt_3s": [
+      {
+        "seg_id": "segment_0070",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_0092",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_0113",
+        "dur": 2.2
+      },
+      {
+        "seg_id": "segment_0140",
+        "dur": 1.71
+      },
+      {
+        "seg_id": "segment_0175",
+        "dur": 2.22
+      },
+      {
+        "seg_id": "segment_0235",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_0262",
+        "dur": 2.2
+      },
+      {
+        "seg_id": "segment_0289",
+        "dur": 2.22
+      },
+      {
+        "seg_id": "segment_0294",
+        "dur": 2.22
+      },
+      {
+        "seg_id": "segment_0301",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_0326",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_0335",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_0385",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_0419",
+        "dur": 2.37
+      },
+      {
+        "seg_id": "segment_0421",
+        "dur": 2.52
+      },
+      {
+        "seg_id": "segment_0426",
+        "dur": 2.6
+      },
+      {
+        "seg_id": "segment_0440",
+        "dur": 1.7
+      },
+      {
+        "seg_id": "segment_0441",
+        "dur": 2.55
+      },
+      {
+        "seg_id": "segment_0445",
+        "dur": 2.1
+      },
+      {
+        "seg_id": "segment_0446",
+        "dur": 2.2
+      },
+      {
+        "seg_id": "segment_0447",
+        "dur": 2.8
+      },
+      {
+        "seg_id": "segment_0449",
+        "dur": 1.9
+      },
+      {
+        "seg_id": "segment_0452",
+        "dur": 2.3
+      },
+      {
+        "seg_id": "segment_0473",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_0504",
+        "dur": 2.37
+      },
+      {
+        "seg_id": "segment_0545",
+        "dur": 2.47
+      },
+      {
+        "seg_id": "segment_0569",
+        "dur": 2.53
+      },
+      {
+        "seg_id": "segment_0590",
+        "dur": 2.45
+      },
+      {
+        "seg_id": "segment_0606",
+        "dur": 2.76
+      },
+      {
+        "seg_id": "segment_0628",
+        "dur": 2.58
+      },
+      {
+        "seg_id": "segment_0748",
+        "dur": 2.44
+      },
+      {
+        "seg_id": "segment_0750",
+        "dur": 2.88
+      },
+      {
+        "seg_id": "segment_0758",
+        "dur": 2.44
+      },
+      {
+        "seg_id": "segment_0762",
+        "dur": 2.54
+      },
+      {
+        "seg_id": "segment_0773",
+        "dur": 2.66
+      },
+      {
+        "seg_id": "segment_0824",
+        "dur": 2.2
+      },
+      {
+        "seg_id": "segment_0832",
+        "dur": 2.4
+      },
+      {
+        "seg_id": "segment_0836",
+        "dur": 0.8
+      },
+      {
+        "seg_id": "segment_0856",
+        "dur": 1.84
+      },
+      {
+        "seg_id": "segment_0857",
+        "dur": 2.26
+      },
+      {
+        "seg_id": "segment_0862",
+        "dur": 2.22
+      },
+      {
+        "seg_id": "segment_0880",
+        "dur": 2.88
+      },
+      {
+        "seg_id": "segment_0882",
+        "dur": 2.44
+      },
+      {
+        "seg_id": "segment_0901",
+        "dur": 2.98
+      },
+      {
+        "seg_id": "segment_0902",
+        "dur": 1.56
+      },
+      {
+        "seg_id": "segment_0909",
+        "dur": 2.1
+      },
+      {
+        "seg_id": "segment_0910",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_0920",
+        "dur": 2.56
+      },
+      {
+        "seg_id": "segment_1035",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_1042",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_1043",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_1044",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_1062",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_1126",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_1171",
+        "dur": 2.44
+      },
+      {
+        "seg_id": "segment_1183",
+        "dur": 2.75
+      },
+      {
+        "seg_id": "segment_1213",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_1224",
+        "dur": 2.2
+      },
+      {
+        "seg_id": "segment_1270",
+        "dur": 2.21
+      },
+      {
+        "seg_id": "segment_1278",
+        "dur": 1.19
+      },
+      {
+        "seg_id": "segment_1305",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_1335",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_1353",
+        "dur": 2.16
+      },
+      {
+        "seg_id": "segment_1384",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_1409",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_1476",
+        "dur": 2.58
+      },
+      {
+        "seg_id": "segment_1491",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_1501",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_1569",
+        "dur": 2.2
+      },
+      {
+        "seg_id": "segment_1594",
+        "dur": 2.18
+      },
+      {
+        "seg_id": "segment_1625",
+        "dur": 2.45
+      },
+      {
+        "seg_id": "segment_1746",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_1751",
+        "dur": 2.89
+      },
+      {
+        "seg_id": "segment_1764",
+        "dur": 2.76
+      },
+      {
+        "seg_id": "segment_1814",
+        "dur": 2.2
+      },
+      {
+        "seg_id": "segment_1873",
+        "dur": 2.76
+      },
+      {
+        "seg_id": "segment_1918",
+        "dur": 2.81
+      },
+      {
+        "seg_id": "segment_1919",
+        "dur": 2.34
+      },
+      {
+        "seg_id": "segment_2000",
+        "dur": 2.22
+      },
+      {
+        "seg_id": "segment_2003",
+        "dur": 1.44
+      },
+      {
+        "seg_id": "segment_2067",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_2080",
+        "dur": 2.85
+      },
+      {
+        "seg_id": "segment_2095",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_2133",
+        "dur": 2.65
+      },
+      {
+        "seg_id": "segment_2178",
+        "dur": 2.97
+      },
+      {
+        "seg_id": "segment_2254",
+        "dur": 2.76
+      },
+      {
+        "seg_id": "segment_2286",
+        "dur": 2.45
+      },
+      {
+        "seg_id": "segment_2366",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_2428",
+        "dur": 2.29
+      },
+      {
+        "seg_id": "segment_2447",
+        "dur": 2.54
+      },
+      {
+        "seg_id": "segment_2477",
+        "dur": 2.62
+      },
+      {
+        "seg_id": "segment_2493",
+        "dur": 2.67
+      },
+      {
+        "seg_id": "segment_2494",
+        "dur": 2.15
+      },
+      {
+        "seg_id": "segment_2569",
+        "dur": 1.0
+      },
+      {
+        "seg_id": "segment_2571",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_2572",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_2573",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_2574",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_2575",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_2577",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_2580",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_2585",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_2607",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_2666",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_2675",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_2677",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_2682",
+        "dur": 1.9
+      },
+      {
+        "seg_id": "segment_2686",
+        "dur": 1.8
+      },
+      {
+        "seg_id": "segment_2691",
+        "dur": 2.8
+      },
+      {
+        "seg_id": "segment_2695",
+        "dur": 2.8
+      },
+      {
+        "seg_id": "segment_2696",
+        "dur": 1.5
+      },
+      {
+        "seg_id": "segment_2699",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_2702",
+        "dur": 1.5
+      },
+      {
+        "seg_id": "segment_2712",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_2714",
+        "dur": 2.8
+      },
+      {
+        "seg_id": "segment_2715",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_2718",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_2727",
+        "dur": 2.8
+      },
+      {
+        "seg_id": "segment_2746",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_2834",
+        "dur": 2.76
+      },
+      {
+        "seg_id": "segment_2874",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_2978",
+        "dur": 2.44
+      },
+      {
+        "seg_id": "segment_3002",
+        "dur": 2.82
+      },
+      {
+        "seg_id": "segment_3003",
+        "dur": 2.42
+      },
+      {
+        "seg_id": "segment_3011",
+        "dur": 1.72
+      },
+      {
+        "seg_id": "segment_3012",
+        "dur": 2.84
+      },
+      {
+        "seg_id": "segment_3017",
+        "dur": 2.59
+      },
+      {
+        "seg_id": "segment_3022",
+        "dur": 2.38
+      },
+      {
+        "seg_id": "segment_3026",
+        "dur": 2.59
+      },
+      {
+        "seg_id": "segment_3032",
+        "dur": 2.85
+      },
+      {
+        "seg_id": "segment_3037",
+        "dur": 2.3
+      },
+      {
+        "seg_id": "segment_3063",
+        "dur": 2.54
+      },
+      {
+        "seg_id": "segment_3145",
+        "dur": 2.45
+      },
+      {
+        "seg_id": "segment_3165",
+        "dur": 2.53
+      },
+      {
+        "seg_id": "segment_3168",
+        "dur": 1.57
+      },
+      {
+        "seg_id": "segment_3176",
+        "dur": 2.7
+      },
+      {
+        "seg_id": "segment_3191",
+        "dur": 2.92
+      },
+      {
+        "seg_id": "segment_3197",
+        "dur": 2.9
+      },
+      {
+        "seg_id": "segment_3198",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_3200",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_3238",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_3274",
+        "dur": 2.58
+      },
+      {
+        "seg_id": "segment_3300",
+        "dur": 2.37
+      },
+      {
+        "seg_id": "segment_3328",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_3367",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_3377",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_3392",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_3397",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_3406",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_3409",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_3422",
+        "dur": 2.76
+      },
+      {
+        "seg_id": "segment_3450",
+        "dur": 2.78
+      },
+      {
+        "seg_id": "segment_3459",
+        "dur": 2.44
+      },
+      {
+        "seg_id": "segment_3582",
+        "dur": 2.74
+      },
+      {
+        "seg_id": "segment_3665",
+        "dur": 2.92
+      },
+      {
+        "seg_id": "segment_3716",
+        "dur": 2.9
+      },
+      {
+        "seg_id": "segment_3789",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_3828",
+        "dur": 2.8
+      },
+      {
+        "seg_id": "segment_3927",
+        "dur": 2.9
+      },
+      {
+        "seg_id": "segment_3979",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_4165",
+        "dur": 2.65
+      },
+      {
+        "seg_id": "segment_4256",
+        "dur": 2.45
+      },
+      {
+        "seg_id": "segment_4329",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_4377",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_4409",
+        "dur": 2.44
+      },
+      {
+        "seg_id": "segment_4441",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_4454",
+        "dur": 2.8
+      },
+      {
+        "seg_id": "segment_4524",
+        "dur": 2.51
+      },
+      {
+        "seg_id": "segment_4601",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_4679",
+        "dur": 2.6
+      },
+      {
+        "seg_id": "segment_4705",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_4709",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_4720",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_4724",
+        "dur": 2.8
+      },
+      {
+        "seg_id": "segment_4730",
+        "dur": 2.7
+      },
+      {
+        "seg_id": "segment_4759",
+        "dur": 2.7
+      },
+      {
+        "seg_id": "segment_4768",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_4869",
+        "dur": 2.74
+      },
+      {
+        "seg_id": "segment_4883",
+        "dur": 2.51
+      },
+      {
+        "seg_id": "segment_4889",
+        "dur": 2.69
+      },
+      {
+        "seg_id": "segment_4895",
+        "dur": 1.82
+      },
+      {
+        "seg_id": "segment_4902",
+        "dur": 2.76
+      },
+      {
+        "seg_id": "segment_4917",
+        "dur": 2.8
+      },
+      {
+        "seg_id": "segment_4924",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_5039",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_5040",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_5075",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_5090",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_5103",
+        "dur": 2.46
+      },
+      {
+        "seg_id": "segment_5154",
+        "dur": 2.94
+      },
+      {
+        "seg_id": "segment_5165",
+        "dur": 2.14
+      },
+      {
+        "seg_id": "segment_5166",
+        "dur": 2.91
+      },
+      {
+        "seg_id": "segment_5185",
+        "dur": 1.41
+      },
+      {
+        "seg_id": "segment_5225",
+        "dur": 2.9
+      },
+      {
+        "seg_id": "segment_5283",
+        "dur": 2.87
+      },
+      {
+        "seg_id": "segment_5736",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_5830",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_5859",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_5881",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_5883",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_5967",
+        "dur": 2.55
+      },
+      {
+        "seg_id": "segment_6033",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_6256",
+        "dur": 1.0
+      },
+      {
+        "seg_id": "segment_6530",
+        "dur": 2.3
+      },
+      {
+        "seg_id": "segment_6573",
+        "dur": 2.7
+      },
+      {
+        "seg_id": "segment_6574",
+        "dur": 2.3
+      },
+      {
+        "seg_id": "segment_6577",
+        "dur": 2.8
+      },
+      {
+        "seg_id": "segment_6582",
+        "dur": 2.9
+      },
+      {
+        "seg_id": "segment_6602",
+        "dur": 2.7
+      },
+      {
+        "seg_id": "segment_6744",
+        "dur": 2.8
+      },
+      {
+        "seg_id": "segment_6777",
+        "dur": 2.9
+      },
+      {
+        "seg_id": "segment_6814",
+        "dur": 2.22
+      },
+      {
+        "seg_id": "segment_6845",
+        "dur": 2.72
+      },
+      {
+        "seg_id": "segment_6874",
+        "dur": 2.21
+      },
+      {
+        "seg_id": "segment_6896",
+        "dur": 2.81
+      },
+      {
+        "seg_id": "segment_6899",
+        "dur": 2.41
+      },
+      {
+        "seg_id": "segment_6926",
+        "dur": 2.9
+      },
+      {
+        "seg_id": "segment_7008",
+        "dur": 2.22
+      },
+      {
+        "seg_id": "segment_7014",
+        "dur": 2.57
+      },
+      {
+        "seg_id": "segment_6972",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_7060",
+        "dur": 2.8
+      },
+      {
+        "seg_id": "segment_7083",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_7105",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_7106",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_7107",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_7128",
+        "dur": 2.5
+      },
+      {
+        "seg_id": "segment_7134",
+        "dur": 2.21
+      },
+      {
+        "seg_id": "segment_7143",
+        "dur": 2.55
+      },
+      {
+        "seg_id": "segment_7150",
+        "dur": 2.73
+      },
+      {
+        "seg_id": "segment_7167",
+        "dur": 2.93
+      },
+      {
+        "seg_id": "segment_7173",
+        "dur": 2.22
+      },
+      {
+        "seg_id": "segment_7233",
+        "dur": 2.7
+      },
+      {
+        "seg_id": "segment_7263",
+        "dur": 2.4
+      },
+      {
+        "seg_id": "segment_7285",
+        "dur": 2.8
+      },
+      {
+        "seg_id": "segment_7323",
+        "dur": 2.76
+      },
+      {
+        "seg_id": "segment_7585",
+        "dur": 2.6
+      },
+      {
+        "seg_id": "segment_7589",
+        "dur": 2.8
+      },
+      {
+        "seg_id": "segment_7750",
+        "dur": 2.63
+      },
+      {
+        "seg_id": "segment_7792",
+        "dur": 2.39
+      },
+      {
+        "seg_id": "segment_7846",
+        "dur": 2.0
+      },
+      {
+        "seg_id": "segment_7889",
+        "dur": 2.53
+      },
+      {
+        "seg_id": "segment_8032",
+        "dur": 2.92
+      }
+    ],
+    "missing_audio": [],
+    "missing_text": [],
+    "issues": []
+  }
+}

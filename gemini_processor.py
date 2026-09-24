@@ -27,11 +27,11 @@ from config import (
 
 logger = logging.getLogger("RajVaani.GeminiProcessor")
 
-# Candidate models for fallback in case of high demand (503) or unavailability
 FALLBACK_MODELS = [
-    "gemini-3.5-flash",
-    "gemini-3.5-flash-lite",
     "gemini-3.6-flash",
+    "gemini-3.5-flash",
+    "gemini-3.7-flash",
+    "gemini-3.5-flash-lite",
     "gemini-flash-latest",
 ]
 
@@ -50,7 +50,7 @@ class GeminiAudioProcessor:
         retry_delay_base: float = 2.0,
     ):
         self.api_key = api_key or os.environ.get("GEMINI_API_KEY")
-        self.model_name = model_name or os.environ.get("GEMINI_MODEL", "gemini-3.5-flash")
+        self.model_name = model_name or os.environ.get("GEMINI_MODEL", "gemini-3.6-flash")
         self.max_retries = max_retries
         self.retry_delay_base = retry_delay_base
         self.client = None

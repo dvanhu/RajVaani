@@ -32,8 +32,11 @@ def generate_accuracy_matrix() -> Dict[str, Any]:
         if not speech_records:
             continue
             
-        confidences = [r.get("confidence_score", 1.0) for r in speech_records]
-        avg_conf = (sum(confidences) / len(confidences)) * 100.0
+        confidences = [
+            (r.get("confidence_score") if r.get("confidence_score") is not None else 1.0)
+            for r in speech_records
+        ]
+        avg_conf = (sum(confidences) / len(confidences)) * 100.0 if confidences else 0.0
         total_duration_sec = sum(r.get("duration_seconds", 0.0) for r in speech_records)
         
         results[dialect_key] = {

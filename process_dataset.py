@@ -94,6 +94,23 @@ def append_to_manifest(manifest_path: Path, records: List[Dict[str, Any]]):
             f.write(json.dumps(rec, ensure_ascii=False) + "\n")
 
 
+import hashlib
+
+def calculate_sha256(file_path: Path) -> str:
+    """Computes SHA-256 hex digest of a file for cryptographic provenance."""
+    if not file_path.exists():
+        return ""
+    h = hashlib.sha256()
+    with open(file_path, "rb") as f:
+        while chunk := f.read(65536):
+            h.update(chunk)
+    return h.hexdigest()
+
+
+import threading
+from concurrent.futures import ThreadPoolExecutor, as_completed
+
+
 def process_dialect_dataset(
     dialect: str,
     input_root: Path,
@@ -103,13 +120,16 @@ def process_dialect_dataset(
     skip_existing: bool = True,
     max_duration_mins: Optional[float] = None,
     max_files: Optional[int] = None,
+    workers: int = 5,
 ) -> Dict[str, Any]:
     """
-    Processes all audio files for a single dialect up to max_duration_mins or max_files.
+    Processes all audio files for a single dialect with strict pre-slice temporal validation,
+    16kHz mono PCM16 WAV export, exclusions separation, SHA-256 provenance, and multi-threaded acceleration.
     """
     dialect_in_dir = input_root / dialect
     dialect_out_dir = output_root / dialect
     manifest_file = dialect_out_dir / f"{dialect}_metadata.jsonl"
+    exclusions_file = dialect_out_dir / f"{dialect}_exclusions.jsonl"
 
     audio_files = find_audio_files(dialect_in_dir)
     stats = {
@@ -127,29 +147,49 @@ def process_dialect_dataset(
         return stats
 
     existing_records = load_existing_manifest(manifest_file)
+    existing_exclusions = load_existing_manifest(exclusions_file)
     processed_sources = {r.get("source_file") for r in existing_records if "source_file" in r}
+    for r in existing_exclusions:
+        if "source_file" in r:
+            processed_sources.add(r.get("source_file"))
 
     # Calculate starting segment counter based on existing files/records
-    segment_counter = len(existing_records) + 1
+    segment_counter = len(existing_records) + len(existing_exclusions) + 1
+    counter_lock = threading.Lock()
+    file_write_lock = threading.Lock()
+    stats_lock = threading.Lock()
 
-    console.print(f"\n[bold cyan]─── Processing Dialect: {dialect.upper()} ({len(audio_files)} files) ───[/bold cyan]")
-
+    # Filter files to process
+    pending_files = []
     for audio_file in audio_files:
-        # Check limits
-        if max_files and stats["processed_files"] >= max_files:
-            console.print(f"[green]✓ Reached max files limit ({max_files}) for {dialect}. Stopping.[/green]")
-            break
-
-        if max_duration_mins and (stats["total_speech_duration_sec"] >= max_duration_mins * 60.0):
-            console.print(f"[green]✓ Reached target duration limit ({max_duration_mins:.1f} mins) for {dialect}. Stopping.[/green]")
-            break
-
         if skip_existing and audio_file.name in processed_sources:
-            console.print(f"[dim]• Skipping already processed file: {audio_file.name}[/dim]")
             stats["processed_files"] += 1
             continue
+        pending_files.append(audio_file)
 
-        console.print(f"[bold]▶ Processing file:[/bold] [blue]{audio_file.name}[/blue]")
+    if max_files:
+        pending_files = pending_files[:max_files]
+
+    console.print(
+        f"\n[bold cyan]─── Processing Dialect: {dialect.upper()} ({len(pending_files)} remaining of {len(audio_files)} files | Workers: {workers}) ───[/bold cyan]"
+    )
+
+    if not pending_files:
+        console.print(f"[green]✓ All files in '{dialect}' are already processed![/green]")
+        return stats
+
+    def _process_single_file(audio_file: Path):
+        nonlocal segment_counter
+
+        # Probe raw audio master properties
+        source_dur = get_audio_duration(str(audio_file))
+        source_sha256 = calculate_sha256(audio_file)
+
+        if source_dur is None or source_dur <= 0.0:
+            console.print(f"[bold red]✗ Could not read source audio duration for '{audio_file.name}'. Skipping.[/bold red]")
+            return
+
+        clean_stem = "".join([c if c.isalnum() else "_" for c in audio_file.stem])[:24]
 
         try:
             # 1. Call Gemini to transcribe and segment
@@ -158,95 +198,148 @@ def process_dialect_dataset(
                 dialect_key=dialect,
             )
 
-            file_records: List[Dict[str, Any]] = []
+            num_segments = len(manifest.segments)
+            with counter_lock:
+                start_seg_idx = segment_counter
+                segment_counter += num_segments
 
-            for seg in manifest.segments:
-                seg_id = f"segment_{segment_counter:04d}"
-                duration = round(seg.end_time_seconds - seg.start_time_seconds, 3)
+            file_speech_records: List[Dict[str, Any]] = []
+            file_exclusion_records: List[Dict[str, Any]] = []
 
-                stats["total_segments"] += 1
+            for i, seg in enumerate(manifest.segments):
+                curr_idx = start_seg_idx + i
+                seg_id = f"segment_{curr_idx:04d}"
 
-                if seg.is_noise_or_music:
-                    stats["noise_segments"] += 1
-                    console.print(f"  [yellow]• [{seg_id}] Flagged as noise/music ({seg.start_time_seconds:.1f}s - {seg.end_time_seconds:.1f}s)[/yellow]")
-                    
-                    record = {
+                # Pre-slice Temporal Clamp Gate
+                clamped_start = max(0.0, float(seg.start_time_seconds))
+                clamped_end = min(float(source_dur), float(seg.end_time_seconds))
+                duration = round(clamped_end - clamped_start, 3)
+
+                # Traceable Scoped Speaker ID
+                scoped_speaker_id = f"spk_{dialect}_{clean_stem}_{seg.speaker_id}"
+
+                # Noise / Singing / Background Music Exclusions Handling
+                if seg.is_noise_or_music or duration < 0.3 or clamped_start >= source_dur:
+                    exclusion_record = {
                         "segment_id": seg_id,
                         "source_file": audio_file.name,
+                        "source_sha256": source_sha256,
                         "dialect": dialect,
-                        "audio_file": None,
-                        "text_file": None,
-                        "start_time_seconds": seg.start_time_seconds,
-                        "end_time_seconds": seg.end_time_seconds,
+                        "start_time_seconds": clamped_start,
+                        "end_time_seconds": clamped_end,
                         "duration_seconds": duration,
-                        "speaker_id": seg.speaker_id,
+                        "speaker_id": scoped_speaker_id,
                         "verbatim_devanagari": seg.verbatim_devanagari,
+                        "exclusion_reason": seg.notes or "Pure noise, singing, or music",
                         "is_noise_or_music": True,
                         "confidence_score": seg.confidence_score,
-                        "notes": seg.notes or "Pure noise / music",
                     }
-                    file_records.append(record)
-                    segment_counter += 1
+                    file_exclusion_records.append(exclusion_record)
                     continue
 
-                # Valid speech segment
-                stats["valid_speech_segments"] += 1
-                stats["total_speech_duration_sec"] += duration
+                # Standardized ASR Output: 16 kHz Mono PCM16 WAV partitioned into 1,000-segment subfolders
+                part_idx = ((curr_idx - 1) // 1000) + 1
+                part_folder = f"part_{part_idx:03d}"
+                (dialect_out_dir / part_folder).mkdir(parents=True, exist_ok=True)
 
-                # Determine audio output format (keep original extension or fallback to wav)
-                audio_ext = audio_file.suffix.lower() if audio_file.suffix.lower() in [".wav", ".mp3"] else ".wav"
-                out_audio_name = f"{seg_id}{audio_ext}"
-                out_text_name = f"{seg_id}.txt"
+                out_audio_name = f"{part_folder}/{seg_id}.wav"
+                out_text_name = f"{part_folder}/{seg_id}.txt"
 
                 out_audio_path = dialect_out_dir / out_audio_name
                 out_text_path = dialect_out_dir / out_text_name
 
-                # 2. Slice audio if enabled
+                # 2. Slice audio with post-export validation gate
+                slice_success = True
                 if slice_audio:
                     slice_success = slice_audio_segment(
                         input_audio_path=str(audio_file),
                         output_audio_path=str(out_audio_path),
-                        start_sec=seg.start_time_seconds,
-                        end_sec=seg.end_time_seconds,
+                        start_sec=clamped_start,
+                        end_sec=clamped_end,
+                        output_format="wav",
+                        target_sample_rate=16000,
                     )
-                    if not slice_success:
-                        console.print(f"  [red]✗ Slicing failed for {seg_id}[/red]")
+
+                if not slice_success:
+                    exclusion_record = {
+                        "segment_id": seg_id,
+                        "source_file": audio_file.name,
+                        "source_sha256": source_sha256,
+                        "dialect": dialect,
+                        "start_time_seconds": clamped_start,
+                        "end_time_seconds": clamped_end,
+                        "duration_seconds": duration,
+                        "speaker_id": scoped_speaker_id,
+                        "verbatim_devanagari": seg.verbatim_devanagari,
+                        "exclusion_reason": "Failed acoustic/slicing gate",
+                        "is_noise_or_music": True,
+                        "confidence_score": seg.confidence_score,
+                    }
+                    file_exclusion_records.append(exclusion_record)
+                    continue
 
                 # 3. Write verbatim text file
                 with open(out_text_path, "w", encoding="utf-8") as tf:
                     tf.write(seg.verbatim_devanagari.strip() + "\n")
 
-                # 4. Prepare JSONL record
+                # Compute exported WAV SHA-256
+                exported_sha256 = calculate_sha256(out_audio_path) if out_audio_path.exists() else ""
+
+                # 4. Prepare JSONL record for clean training pair
                 record = {
                     "segment_id": seg_id,
                     "source_file": audio_file.name,
+                    "source_sha256": source_sha256,
                     "dialect": dialect,
                     "audio_file": out_audio_name,
+                    "exported_audio_sha256": exported_sha256,
                     "text_file": out_text_name,
-                    "start_time_seconds": seg.start_time_seconds,
-                    "end_time_seconds": seg.end_time_seconds,
+                    "start_time_seconds": clamped_start,
+                    "end_time_seconds": clamped_end,
                     "duration_seconds": duration,
-                    "speaker_id": seg.speaker_id,
+                    "speaker_id": scoped_speaker_id,
                     "verbatim_devanagari": seg.verbatim_devanagari.strip(),
+                    "audio_format": "16kHz_mono_pcm16_wav",
                     "is_noise_or_music": False,
                     "confidence_score": seg.confidence_score,
                     "notes": seg.notes,
                 }
-                file_records.append(record)
-                segment_counter += 1
+                file_speech_records.append(record)
 
-                console.print(
-                    f"  [green]✓ {seg_id}[/green] ({seg.start_time_seconds:.1f}s - {seg.end_time_seconds:.1f}s | {seg.speaker_id}): "
-                    f"[white]{seg.verbatim_devanagari[:45]}...[/white]"
-                )
+            # 5. Append records atomically
+            with file_write_lock:
+                if file_speech_records:
+                    append_to_manifest(manifest_file, file_speech_records)
+                if file_exclusion_records:
+                    append_to_manifest(exclusions_file, file_exclusion_records)
 
-            # 5. Append records to dialect metadata manifest
-            append_to_manifest(manifest_file, file_records)
-            stats["processed_files"] += 1
+            with stats_lock:
+                stats["processed_files"] += 1
+                stats["total_segments"] += num_segments
+                stats["valid_speech_segments"] += len(file_speech_records)
+                stats["noise_segments"] += len(file_exclusion_records)
+                stats["total_speech_duration_sec"] += sum(r["duration_seconds"] for r in file_speech_records)
+
+            console.print(
+                f"  [green]✓ {audio_file.name}[/green] -> {len(file_speech_records)} valid segments, {len(file_exclusion_records)} exclusions (Total processed: {stats['processed_files']}/{len(pending_files)})"
+            )
 
         except Exception as e:
             console.print(f"[bold red]✗ Failed to process '{audio_file.name}': {e}[/bold red]")
             logging.exception(f"Processing error in {audio_file.name}")
+
+    effective_workers = min(workers, len(pending_files)) if pending_files else 1
+    if effective_workers > 1:
+        with ThreadPoolExecutor(max_workers=effective_workers) as executor:
+            futures = [executor.submit(_process_single_file, f) for f in pending_files]
+            for future in as_completed(futures):
+                try:
+                    future.result()
+                except Exception as exc:
+                    logger.error(f"Worker task error: {exc}")
+    else:
+        for f in pending_files:
+            _process_single_file(f)
 
     return stats
 
@@ -305,9 +398,21 @@ def main():
         help="Disable audio slicing (transcription and metadata only)",
     )
     parser.add_argument(
+        "--skip_existing",
+        action="store_true",
+        default=True,
+        help="Skip previously processed audio files (default behavior)",
+    )
+    parser.add_argument(
         "--overwrite",
         action="store_true",
         help="Overwrite previously processed audio files",
+    )
+    parser.add_argument(
+        "--workers",
+        type=int,
+        default=5,
+        help="Number of concurrent worker threads for Gemini API calls & audio slicing",
     )
     parser.add_argument(
         "--init_dirs",
@@ -354,6 +459,7 @@ def main():
     console.print(f"• Output Directory: [cyan]{output_root.resolve()}[/cyan]")
     console.print(f"• Model:            [cyan]{args.model}[/cyan]")
     console.print(f"• Dialects:         [cyan]{', '.join(target_dialects)}[/cyan]")
+    console.print(f"• Workers:          [cyan]{args.workers}[/cyan]")
     console.print(f"• Slice Audio:      [cyan]{not args.no_slice}[/cyan]\n")
 
     summary_stats = []
@@ -368,6 +474,7 @@ def main():
             skip_existing=not args.overwrite,
             max_duration_mins=args.max_duration_mins,
             max_files=args.max_files,
+            workers=args.workers,
         )
         summary_stats.append(stat)
 

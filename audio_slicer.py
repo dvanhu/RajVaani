@@ -134,17 +134,48 @@ def slice_wav_native(
         return False
 
 
+def calculate_audio_rms_db(file_path: Path) -> float:
+    """Calculates RMS audio level in dBFS to detect silent or empty clips."""
+    try:
+        if FFMPEG_BIN:
+            cmd = [
+                FFMPEG_BIN,
+                "-i", str(file_path),
+                "-f", "s16le",
+                "-ac", "1",
+                "-ar", "16000",
+                "-"
+            ]
+            res = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.DEVNULL)
+            raw = res.stdout
+            if len(raw) < 100:
+                return -100.0
+            import math
+            import numpy as np
+            samples = np.frombuffer(raw, dtype=np.int16)
+            if len(samples) == 0:
+                return -100.0
+            rms = np.sqrt(np.mean(samples.astype(np.float64)**2))
+            if rms > 0:
+                return 20 * math.log10(rms / 32768.0)
+            return -100.0
+    except Exception:
+        pass
+    return 0.0
+
+
 def slice_audio_segment(
     input_audio_path: str,
     output_audio_path: str,
     start_sec: float,
     end_sec: float,
-    output_format: Optional[str] = None,
+    output_format: Optional[str] = "wav",
+    target_sample_rate: int = 16000,
 ) -> bool:
     """
-    Extracts an audio clip between start_sec and end_sec.
-    Prioritizes direct FFmpeg for speed and format flexibility,
-    falls back to pydub and native wave module.
+    Losslessly extracts and standardizes an audio clip between start_sec and end_sec.
+    Always decodes compressed formats first and exports standard 16 kHz Mono PCM16 WAV.
+    Includes post-export duration and RMS energy validation.
     """
     input_path = Path(input_audio_path)
     output_path = Path(output_audio_path)
@@ -152,45 +183,48 @@ def slice_audio_segment(
 
     start_sec = max(0.0, float(start_sec))
     end_sec = float(end_sec)
+    expected_duration = end_sec - start_sec
 
-    if start_sec >= end_sec:
-        logger.warning(f"Invalid timestamp interval: {start_sec}s -> {end_sec}s")
+    if expected_duration <= 0.05:
+        logger.warning(f"Invalid timestamp interval: {start_sec}s -> {end_sec}s (duration too small)")
         return False
 
-    # 1. Fast Direct FFmpeg execution (supports mp3, wav, m4a, flac, ogg, etc.)
+    # Standard ASR Audio Export: 16kHz, Mono, PCM 16-bit WAV
     if FFMPEG_BIN:
         try:
-            # First attempt stream copy for speed
-            cmd_copy = [
+            cmd_export = [
                 FFMPEG_BIN,
                 "-y",
                 "-ss", f"{start_sec:.3f}",
                 "-to", f"{end_sec:.3f}",
                 "-i", str(input_path),
-                "-c", "copy",
-                str(output_path),
-            ]
-            res = subprocess.run(cmd_copy, stdout=subprocess.DEVNULL, stderr=subprocess.PIPE)
-            if res.returncode == 0 and output_path.exists() and output_path.stat().st_size > 500:
-                return True
-
-            # If copy failed (e.g. keyframe offset issues), re-encode
-            cmd_encode = [
-                FFMPEG_BIN,
-                "-y",
-                "-ss", f"{start_sec:.3f}",
-                "-to", f"{end_sec:.3f}",
-                "-i", str(input_path),
+                "-ar", str(target_sample_rate),
+                "-ac", "1",
+                "-c:a", "pcm_s16le",
                 "-avoid_negative_ts", "make_zero",
                 str(output_path),
             ]
-            res_enc = subprocess.run(cmd_encode, stdout=subprocess.DEVNULL, stderr=subprocess.PIPE)
-            if res_enc.returncode == 0 and output_path.exists() and output_path.stat().st_size > 500:
-                return True
+            res = subprocess.run(cmd_export, stdout=subprocess.DEVNULL, stderr=subprocess.PIPE)
+            
+            if res.returncode == 0 and output_path.exists() and output_path.stat().st_size > 500:
+                # Post-Export Acoustic & Temporal Validation Gate
+                actual_dur = get_audio_duration(str(output_path))
+                if actual_dur is not None:
+                    dur_delta = abs(actual_dur - expected_duration)
+                    if dur_delta > 0.20 and (dur_delta / max(expected_duration, 0.01)) > 0.25:
+                        logger.error(f"Duration mismatch for {output_path.name}: expected {expected_duration:.2f}s, got {actual_dur:.2f}s")
+                        return False
+                        
+                    # Check silence
+                    rms_db = calculate_audio_rms_db(output_path)
+                    if rms_db < -55.0 and actual_dur > 0.5:
+                        logger.warning(f"Silent audio clip detected: {output_path.name} (RMS: {rms_db:.1f} dB)")
+                        
+                    return True
         except Exception as ffmpeg_err:
-            logger.debug(f"Direct FFmpeg slicing failed: {ffmpeg_err}")
+            logger.debug(f"FFmpeg slicing failed: {ffmpeg_err}")
 
-    # 2. Pydub fallback
+    # Pydub fallback
     if PYDUB_AVAILABLE:
         try:
             audio = PydubSegment.from_file(str(input_path))
@@ -201,13 +235,13 @@ def slice_audio_segment(
             end_ms = int(actual_end_sec * 1000)
 
             clip = audio[start_ms:end_ms]
-            target_fmt = output_format or output_path.suffix.lstrip(".").lower() or "wav"
-            clip.export(str(output_path), format=target_fmt)
+            clip = clip.set_frame_rate(target_sample_rate).set_channels(1).set_sample_width(2)
+            clip.export(str(output_path), format="wav")
             return True
         except Exception as pydub_err:
             logger.debug(f"Pydub slicing attempt encountered: {pydub_err}")
 
-    # 3. Native WAV fallback
+    # Native WAV fallback
     if input_path.suffix.lower() == ".wav":
         return slice_wav_native(
             input_audio_path=input_audio_path,

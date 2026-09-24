@@ -234,22 +234,28 @@ class TestPipelineOrchestration(unittest.TestCase):
 
         # Verify output directory structure
         bagri_out = self.output_root / "bagri"
-        self.assertTrue((bagri_out / "segment_0001.wav").exists())
-        self.assertTrue((bagri_out / "segment_0001.txt").exists())
+        self.assertTrue((bagri_out / "part_001" / "segment_0001.wav").exists())
+        self.assertTrue((bagri_out / "part_001" / "segment_0001.txt").exists())
         
         # Verify text content
-        with open(bagri_out / "segment_0001.txt", "r", encoding="utf-8") as f:
+        with open(bagri_out / "part_001" / "segment_0001.txt", "r", encoding="utf-8") as f:
             text_content = f.read().strip()
             self.assertEqual(text_content, "म्हारो नाम सोहनलाल है अर म्हे गंगानगर रा हां।")
 
         # Verify JSONL metadata
         manifest_path = bagri_out / "bagri_metadata.jsonl"
+        exclusions_path = bagri_out / "bagri_exclusions.jsonl"
         self.assertTrue(manifest_path.exists())
+        self.assertTrue(exclusions_path.exists())
+        
         manifest_entries = load_existing_manifest(manifest_path)
-        self.assertEqual(len(manifest_entries), 2)
+        self.assertEqual(len(manifest_entries), 1)
         self.assertEqual(manifest_entries[0]["segment_id"], "segment_0001")
         self.assertFalse(manifest_entries[0]["is_noise_or_music"])
-        self.assertTrue(manifest_entries[1]["is_noise_or_music"])
+
+        exclusion_entries = load_existing_manifest(exclusions_path)
+        self.assertEqual(len(exclusion_entries), 1)
+        self.assertTrue(exclusion_entries[0]["is_noise_or_music"])
 
 
 if __name__ == "__main__":
